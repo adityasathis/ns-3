@@ -1,0 +1,6 @@
+[submodule "contrib/nr-u"]
+	path = contrib/nr-u
+	url = git@github.com:adityasathis/ns-3-nru.git
+[submodule "contrib/nr"]
+	path = contrib/nr
+	url = git@github.com:adityasathis/ns-3-nr.git
