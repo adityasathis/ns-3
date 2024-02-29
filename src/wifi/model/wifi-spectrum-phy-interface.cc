@@ -191,7 +191,7 @@ void
 WifiSpectrumPhyInterface::StartTx(Ptr<SpectrumSignalParameters> params)
 {
     params->txPhy = Ptr<SpectrumPhy>(this);
-    params->txAntenna = m_spectrumWifiPhy->GetAntenna();
+    params->txAntenna = DynamicCast<AntennaModel>(m_spectrumWifiPhy->GetAntenna());
     m_channel->StartTx(params);
 }
 

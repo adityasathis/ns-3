@@ -535,14 +535,14 @@ SpectrumWifiPhy::GetRxPpduFromTxPpdu(Ptr<const WifiPpdu> ppdu)
     return GetPhyEntityForPpdu(ppdu)->GetRxPpduFromTxPpdu(ppdu);
 }
 
-Ptr<AntennaModel>
+Ptr<Object>
 SpectrumWifiPhy::GetAntenna() const
 {
     return m_antenna;
 }
 
 void
-SpectrumWifiPhy::SetAntenna(const Ptr<AntennaModel> a)
+SpectrumWifiPhy::SetAntenna(const Ptr<Object> a)
 {
     NS_LOG_FUNCTION(this << a);
     m_antenna = a;

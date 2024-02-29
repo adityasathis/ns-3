@@ -113,13 +113,13 @@ class SpectrumWifiPhy : public WifiPhy
      * Note:  this method may be split into separate SetTx and SetRx
      * methods in the future if the modeling need for this arises
      */
-    void SetAntenna(const Ptr<AntennaModel> antenna);
+    void SetAntenna(const Ptr<Object> antenna);
     /**
      * Get the antenna model used for reception
      *
      * \return the AntennaModel used for reception
      */
-    Ptr<AntennaModel> GetAntenna() const;
+    Ptr<Object> GetAntenna() const;
 
     /**
      * Callback invoked when the PHY model starts to process a signal
@@ -280,7 +280,7 @@ class SpectrumWifiPhy : public WifiPhy
      */
     void NotifyChannelSwitched();
 
-    Ptr<AntennaModel> m_antenna; //!< antenna model
+    Ptr<Object> m_antenna; //!< antenna model
 
     bool m_disableWifiReception;           //!< forces this PHY to fail to sync on any signal
     bool m_trackSignalsInactiveInterfaces; //!< flag whether signals coming from inactive spectrum
