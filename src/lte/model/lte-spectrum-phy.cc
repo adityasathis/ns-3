@@ -642,6 +642,7 @@ LteSpectrumPhy::StartRx(Ptr<SpectrumSignalParameters> spectrumRxParams)
     else
     {
         // other type of signal (could be 3G, GSM, whatever) -> interference
+        // std::cout << "AS_DEBUG: Received data from another technology" << std::endl;
         m_interferenceData->AddSignal(rxPsd, duration);
         m_interferenceCtrl->AddSignal(rxPsd, duration);
     }

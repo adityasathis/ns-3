@@ -372,9 +372,13 @@ InterferenceHelper::AppendEvent(Ptr<Event> event, bool isStartHePortionRxing)
         auto first =
             AddNiChangeEvent(event->GetStartTime(), NiChange(previousPowerStart, event), niIt);
         auto last = AddNiChangeEvent(event->GetEndTime(), NiChange(previousPowerEnd, event), niIt);
+        uint32_t j = 0;
         for (auto i = first; i != last; ++i)
         {
             i->second.AddPower(power);
+            if (!(i->second.GetPower() >= 0))
+                std::cout << "Power Added for " << j << " : " << i->second.GetPower() << std::endl;
+            j++;
         }
     }
 }
@@ -454,6 +458,7 @@ InterferenceHelper::CalculateNoiseInterferenceW(Ptr<Event> event,
             // unless this is the same event
             continue;
         }
+        // std::cout << "AS_DEBUG: " << it->second.GetPower() << " " << event->GetRxPowerW(band) << std::endl;
         noiseInterferenceW = it->second.GetPower() - event->GetRxPowerW(band) - muMimoPowerW;
         if (std::abs(noiseInterferenceW) < std::numeric_limits<double>::epsilon())
         {

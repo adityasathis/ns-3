@@ -408,6 +408,7 @@ UeManager::SetupDataRadioBearer(EpsBearer bearer,
     uint8_t drbid = AddDataRadioBearerInfo(drbInfo);
     uint8_t lcid = Drbid2Lcid(drbid);
     uint8_t bid = Drbid2Bid(drbid);
+    // std::cout << "AS_DEBUG: Requested bearer ID: " << static_cast<unsigned int>(bearerId) << ", contained bearer ID: " << static_cast<unsigned int>(bid) << std::endl;
     NS_ASSERT_MSG(bearerId == 0 || bid == bearerId,
                   "bearer ID mismatch (" << (uint32_t)bid << " != " << (uint32_t)bearerId
                                          << ", the assumption that ID are allocated in the same "

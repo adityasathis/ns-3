@@ -225,6 +225,7 @@ EpcEnbApplication::DoInitialContextSetupRequest(
         params.rnti = rnti;
         params.bearer = erabIt->erabLevelQosParameters;
         params.bearerId = erabIt->erabId;
+        // std::cout << "AS_DEBUG: Bearer ID: " << static_cast<unsigned int>(erabIt->erabId) << std::endl;
         params.gtpTeid = erabIt->sgwTeid;
         m_s1SapUser->DataRadioBearerSetupRequest(params);
 

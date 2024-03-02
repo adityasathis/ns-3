@@ -359,6 +359,8 @@ Ipv4AddressGeneratorImpl::AddAllocated(const Ipv4Address address)
 {
     NS_LOG_FUNCTION(this << address);
 
+    //if (address.Get() ==  )
+
     uint32_t addr = address.Get();
 
     NS_ABORT_MSG_UNLESS(

@@ -192,6 +192,7 @@ EpcUeNas::ActivateEpsBearer(EpsBearer bearer, Ptr<EpcTft> tft)
         btba.tft = tft;
         m_bearersToBeActivatedList.push_back(btba);
         m_bearersToBeActivatedListForReconnection.push_back(btba);
+        // std::cout << "AS_DEBUG: Adding the following bearers to be added " << m_bearersToBeActivatedList.size() << std::endl;
         break;
     }
 }

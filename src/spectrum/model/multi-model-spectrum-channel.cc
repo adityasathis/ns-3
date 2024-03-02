@@ -135,9 +135,12 @@ MultiModelSpectrumChannel::RemoveRx(Ptr<SpectrumPhy> phy)
 void
 MultiModelSpectrumChannel::AddRx(Ptr<SpectrumPhy> phy)
 {
+    // std::cout << "AS_DEBUG: Adding a new Rx to the spectrum channel ->" << phy << "now with device number: " << m_numDevices << std::endl;
     NS_LOG_FUNCTION(this << phy);
 
     Ptr<const SpectrumModel> rxSpectrumModel = phy->GetRxSpectrumModel();
+
+    // std::cout << "AS_DEBUG: Added a new RX with phy: " << phy << std::endl;
 
     NS_ASSERT_MSG(rxSpectrumModel,
                   "phy->GetRxSpectrumModel () returned 0. Please check that the RxSpectrumModel is "
@@ -252,6 +255,7 @@ MultiModelSpectrumChannel::StartTx(Ptr<SpectrumSignalParameters> txParams)
     NS_LOG_LOGIC("converter map first element: "
                  << txInfoIteratorerator->second.m_spectrumConverterMap.begin()->first);
 
+    // std::cout << "----- AS_DEBUG: Starting Tx for " << txParams->txPhy << std::endl << std::endl;
     for (auto rxInfoIterator = m_rxSpectrumModelInfoMap.begin();
          rxInfoIterator != m_rxSpectrumModelInfoMap.end();
          ++rxInfoIterator)
@@ -286,6 +290,7 @@ MultiModelSpectrumChannel::StartTx(Ptr<SpectrumSignalParameters> txParams)
             NS_ASSERT_MSG((*rxPhyIterator)->GetRxSpectrumModel()->GetUid() == rxSpectrumModelUid,
                           "SpectrumModel change was not notified to MultiModelSpectrumChannel "
                           "(i.e., AddRx should be called again after model is changed)");
+
 
             if ((*rxPhyIterator) != txParams->txPhy)
             {
@@ -372,6 +377,7 @@ MultiModelSpectrumChannel::StartTx(Ptr<SpectrumSignalParameters> txParams)
                 if (rxNetDevice)
                 {
                     // the receiver has a NetDevice, so we expect that it is attached to a Node
+                    // std::cout << "AS_DEBUG: Starting Rx for " << *rxPhyIterator << std::endl;
                     uint32_t dstNode = rxNetDevice->GetNode()->GetId();
                     Simulator::ScheduleWithContext(dstNode,
                                                    delay,
@@ -393,6 +399,7 @@ MultiModelSpectrumChannel::StartTx(Ptr<SpectrumSignalParameters> txParams)
             }
         }
     }
+    // std::cout << "----- AS_DEBUG: Ending Tx for " << txParams->txPhy << std::endl << std::endl;
 }
 
 void
@@ -405,6 +412,8 @@ MultiModelSpectrumChannel::StartRx(Ptr<SpectrumSignalParameters> params, Ptr<Spe
             m_spectrumPropagationLoss->CalcRxPowerSpectralDensity(params,
                                                                   params->txPhy->GetMobility(),
                                                                   receiver->GetMobility());
+
+        // std::cout << "AS_DEBUG: Calculating PSD: " << params->psd << std::endl;
     }
     else if (m_phasedArraySpectrumPropagationLoss)
     {
@@ -423,6 +432,8 @@ MultiModelSpectrumChannel::StartRx(Ptr<SpectrumSignalParameters> params, Ptr<Spe
             receiver->GetMobility(),
             txPhasedArrayModel,
             rxPhasedArrayModel);
+
+        // std::cout << "AS_DEBUG: Calculating PSD: " << params->psd << std::endl;
     }
     receiver->StartRx(params);
 }
