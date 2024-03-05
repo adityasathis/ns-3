@@ -31,6 +31,8 @@
 #include <ns3/packet.h>
 #include <ns3/simple-ref-count.h>
 
+#include "ns3/eps-bearer.h"
+
 namespace ns3
 {
 
@@ -132,6 +134,8 @@ class LteRlc : public Object // SimpleRefCount<LteRlc>
                                           uint8_t lcid,
                                           uint32_t bytes,
                                           uint64_t delay);
+
+    EpsBearer* bearer = NULL;
 
     /// \todo MRE What is the sense to duplicate all the interfaces here???
     // NB to avoid the use of multiple inheritance

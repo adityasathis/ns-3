@@ -440,6 +440,10 @@ UeManager::SetupDataRadioBearer(EpsBearer bearer,
     rlc->SetRnti(m_rnti);
     rlc->SetPacketDelayBudgetMs(bearer.GetPacketDelayBudgetMs());
 
+    // Add this RLC to the list of instances
+    m_rrc->rlc_pointers.push_back(rlc);
+    rlc->bearer = &bearer;
+
     drbInfo->m_rlc = rlc;
 
     rlc->SetLcId(lcid);

@@ -108,7 +108,7 @@ EpcMmeApplication::AddBearer(uint64_t imsi, Ptr<EpcTft> tft, EpsBearer bearer)
     NS_ASSERT_MSG(it->second->bearerCounter < 11,
                   "too many bearers already! " << it->second->bearerCounter);
     BearerInfo bearerInfo;
-    std::cout << "Moving to a new bearer ID: " << (it->second->bearerCounter) + 1 << std::endl;
+    // std::cout << "AS_DEBUG: Moving to a new bearer ID: " << (it->second->bearerCounter) + 1 << std::endl;
     bearerInfo.bearerId = ++(it->second->bearerCounter);
     bearerInfo.tft = tft;
     bearerInfo.bearer = bearer;

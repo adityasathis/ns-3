@@ -36,6 +36,9 @@ namespace ns3
 class LteRlcUm : public LteRlc
 {
   public:
+    uint32_t m_maxTxBufferSize; ///< maximum transmit buffer status
+    uint32_t m_txBufferSize;    ///< transmit buffer size
+    
     LteRlcUm();
     ~LteRlcUm() override;
     /**
@@ -96,8 +99,6 @@ class LteRlcUm : public LteRlc
     void DoReportBufferStatus();
 
   private:
-    uint32_t m_maxTxBufferSize; ///< maximum transmit buffer status
-    uint32_t m_txBufferSize;    ///< transmit buffer size
 
     /**
      * \brief Store an incoming (from layer above us) PDU, waiting to transmit it

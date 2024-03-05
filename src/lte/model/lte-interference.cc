@@ -100,7 +100,7 @@ LteInterference::StartRx(Ptr<const SpectrumValue> rxPsd)
         // Accept it and move on with your life.
         // Ideally the upper layer should accept the signal for what it is and mark HARQ retries for signals which cannot be deciphered.
 
-        //NS_ASSERT(Sum((*rxPsd) * (*m_rxSignal)) == 0.0);
+        NS_ASSERT(Sum((*rxPsd) * (*m_rxSignal)) == 0.0);
         (*m_rxSignal) += (*rxPsd);
     }
 }

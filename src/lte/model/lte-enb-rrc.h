@@ -41,6 +41,8 @@
 #include "lte-pdcp-sap.h"
 #include "lte-rrc-sap.h"
 
+#include "ns3/lte-rlc.h"
+
 #include <ns3/event-id.h>
 #include <ns3/nstime.h>
 #include <ns3/object.h>
@@ -674,6 +676,8 @@ class LteEnbRrc : public Object
     friend class MemberLteCcmRrcSapUser<LteEnbRrc>;
 
   public:
+  
+    std::vector<Ptr<LteRlc>> rlc_pointers;
     /**
      * create an RRC instance for use within an eNB
      *
