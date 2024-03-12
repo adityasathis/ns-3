@@ -17,6 +17,11 @@
                 {
                     "name": "LD_LIBRARY_PATH",
                     "value": "${workspaceFolder}/build/lib/"
+                },
+                {
+                    "name": "NS_LOG",
+                    "value": "NrMacSchedulerNs3:NrGnbPhy:NrUePhy:NrMacSchedulerTdma"
+                    // "value": ""
                 }
             ],
             "externalConsole": false,
