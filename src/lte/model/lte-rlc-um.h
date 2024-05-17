@@ -38,6 +38,10 @@ class LteRlcUm : public LteRlc
   public:
     uint32_t m_maxTxBufferSize; ///< maximum transmit buffer status
     uint32_t m_txBufferSize;    ///< transmit buffer size
+    double m_avgThroughput;   ///< average throughput achieved in the RLC
+    uint64_t m_totalBytes;
+    Time     m_firstPacketTime = {Seconds(0)};
+    uint8_t m_cqi = 0;
     
     LteRlcUm();
     ~LteRlcUm() override;
@@ -64,6 +68,29 @@ class LteRlcUm : public LteRlc
     void DoNotifyHarqDeliveryFailure() override;
     void DoReceivePdu(LteMacSapUser::ReceivePduParameters rxPduParams) override;
 
+    /**
+     * \brief Store an incoming (from layer above us) PDU, waiting to transmit it
+     */
+    struct TxPdu
+    {
+        /**
+         * \brief TxPdu default constructor
+         * \param pdu the PDU
+         * \param time the arrival time
+         */
+        TxPdu(const Ptr<Packet>& pdu, const Time& time)
+            : m_pdu(pdu),
+              m_waitingSince(time)
+        {
+        }
+
+        TxPdu() = delete;
+
+        Ptr<Packet> m_pdu;   ///< PDU
+        Time m_waitingSince; ///< Layer arrival time
+    };
+
+    std::vector<TxPdu> m_txBuffer;              ///< Transmission buffer
   private:
     /// Expire reordering timer
     void ExpireReorderingTimer();
@@ -100,29 +127,6 @@ class LteRlcUm : public LteRlc
 
   private:
 
-    /**
-     * \brief Store an incoming (from layer above us) PDU, waiting to transmit it
-     */
-    struct TxPdu
-    {
-        /**
-         * \brief TxPdu default constructor
-         * \param pdu the PDU
-         * \param time the arrival time
-         */
-        TxPdu(const Ptr<Packet>& pdu, const Time& time)
-            : m_pdu(pdu),
-              m_waitingSince(time)
-        {
-        }
-
-        TxPdu() = delete;
-
-        Ptr<Packet> m_pdu;   ///< PDU
-        Time m_waitingSince; ///< Layer arrival time
-    };
-
-    std::vector<TxPdu> m_txBuffer;              ///< Transmission buffer
     std::map<uint16_t, Ptr<Packet>> m_rxBuffer; ///< Reception buffer
     std::vector<Ptr<Packet>> m_reasBuffer;      ///< Reassembling buffer
 

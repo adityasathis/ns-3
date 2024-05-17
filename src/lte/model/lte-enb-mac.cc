@@ -1048,6 +1048,7 @@ LteEnbMac::DoReportBufferStatus(LteMacSapProvider::ReportBufferStatusParameters 
     req.m_rlcRetransmissionQueueSize = params.retxQueueSize;
     req.m_rlcRetransmissionHolDelay = params.retxQueueHolDelay;
     req.m_rlcStatusPduSize = params.statusPduSize;
+    req.m_capc             = params.capc;
     m_schedSapProvider->SchedDlRlcBufferReq(req);
 }
 
@@ -1103,6 +1104,7 @@ LteEnbMac::DoSchedDlConfigInd(FfMacSchedSapUser::SchedDlConfigIndParameters ind)
                     txOpParams.componentCarrierId = m_componentCarrierId;
                     txOpParams.rnti = rnti;
                     txOpParams.lcid = lcid;
+                    txOpParams.cqi = ind.m_buildDataList.at(i).m_dci.m_mcs.at(0);
                     (*lcidIt).second->NotifyTxOpportunity(txOpParams);
                 }
                 else

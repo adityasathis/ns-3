@@ -75,6 +75,7 @@ class LteMacSapProvider
         uint16_t retxQueueHolDelay; /**<  the Head Of Line delay of the retransmission queue */
         uint16_t
             statusPduSize; /**< the current size of the pending STATUS RLC  PDU message in bytes */
+        uint8_t capc;
     };
 
     /**
@@ -111,13 +112,15 @@ class LteMacSapUser
          * \param ccId Component carrier ID
          * \param rnti RNTI
          * \param lcId Logical Channel ID
+         * \param cqi channel quality of associated channel
          */
         TxOpportunityParameters(uint32_t bytes,
                                 uint8_t layer,
                                 uint8_t harqId,
                                 uint8_t ccId,
                                 uint16_t rnti,
-                                uint8_t lcId)
+                                uint8_t lcId,
+                                uint8_t cqi)
         {
             this->bytes = bytes;
             this->layer = layer;
@@ -125,6 +128,7 @@ class LteMacSapUser
             this->componentCarrierId = ccId;
             this->rnti = rnti;
             this->lcid = lcId;
+            this->cqi = cqi;
         }
 
         /**
@@ -140,6 +144,7 @@ class LteMacSapUser
         uint8_t componentCarrierId; /**< the component carrier id */
         uint16_t rnti;              /**< the C-RNTI identifying the UE */
         uint8_t lcid;               /**< the logical channel id */
+        uint8_t cqi;                /**< CQI of the data */
     };
 
     /**

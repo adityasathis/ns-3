@@ -6,34 +6,45 @@ import time
 gnbChannelAccessManager = sys.argv[1]
 varyDevice = sys.argv[2]
 
-# Functions Models
-mcot = a + b*x
+# # Functions Models
+# mcot = a + b*x
 
-# Definitions for the CAPC Values
-Capc0Mcot = {2, 3, 4, 5, 6, 7, 8, 10}
-Capc0CWMin = {1, 3, 5, 7, 15}
-Capc0CWMax = {7, 15, 63, 1023}
-Capc0Defer = {25, 34, 43, 52, 61, 70, 79}
+# # Definitions for the CAPC Values
+# Capc0Mcot = {2, 3, 4, 5, 6, 7, 8, 10}
+# Capc0CWMin = {1, 3, 5, 7, 15}
+# Capc0CWMax = {7, 15, 63, 1023}
+# Capc0Defer = {25, 34, 43, 52, 61, 70, 79}
 
-Capc1Mcot = {2, 3, 4, 5, 6, 7, 8, 10}
-Capc1CWMin = {1, 3, 5, 7, 15}
-Capc1CWMax = {7, 15, 63, 1023}
-Capc1Defer = {25, 34, 43, 52, 61, 70, 79}
+# Capc1Mcot = {2, 3, 4, 5, 6, 7, 8, 10}
+# Capc1CWMin = {1, 3, 5, 7, 15}
+# Capc1CWMax = {7, 15, 63, 1023}
+# Capc1Defer = {25, 34, 43, 52, 61, 70, 79}
 
-Capc2Mcot = {2, 3, 4, 5, 6, 7, 8, 10}
-Capc2CWMin = {1, 3, 5, 7, 15}
-Capc2CWMax = {7, 15, 63, 1023}
-Capc2Defer = {25, 34, 43, 52, 61, 70, 79}
+# Capc2Mcot = {2, 3, 4, 5, 6, 7, 8, 10}
+# Capc2CWMin = {1, 3, 5, 7, 15}
+# Capc2CWMax = {7, 15, 63, 1023}
+# Capc2Defer = {25, 34, 43, 52, 61, 70, 79}
 
-Capc3Mcot = {2, 3, 4, 5, 6, 7, 8, 10}
-Capc3CWMin = {1, 3, 5, 7, 15}
-Capc3CWMax = {7, 15, 63, 1023}
-Capc3Defer = {25, 34, 43, 52, 61, 70, 79}
+# Capc3Mcot = {2, 3, 4, 5, 6, 7, 8, 10}
+# Capc3CWMin = {1, 3, 5, 7, 15}
+# Capc3CWMax = {7, 15, 63, 1023}
+# Capc3Defer = {25, 34, 43, 52, 61, 70, 79}
 
-numGnbs = {1, 2, 3}
-numAps = {1, 2, 3}
-numUes = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-numStas = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+Capc0Configuration = "{5, 3, 7, 2ms, 25us, ACK_ANY}"
+Capc1Configuration = "{5, 7, 15, 3ms, 25us, ACK_ANY}"
+Capc2Configuration = "{5, 15, 63, 10ms, 43us, ACK_ANY}"
+Capc3Configuration = "{5, 15, 1023, 10ms,79us, ACK_ANY}"
+
+technologySelection = {0, 1, 2}  # 0: Only NR-U, 1: Only Wi-Fi, 2: NR-u and Wi-Fi
+
+numGnbs = {1, 2, 3, 4, 5, 6}
+numAps = {1, 2, 3, 4, 5, 6}
+numUesPerGnb = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+numStasPerAp = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+trafficRatios = {"1:1:1:1", "2:1:1:1", "1:2:1:1", "1:1:2:1", "1:1:1:2"}
+
+subcarrierSpacing = {0, 1, 2} # 0: 15 khz, 2: 60 Khz --> Limit for sub-7 GHz
 
 runId = 0
 
@@ -54,7 +65,7 @@ if gnbChannelAccessManager == "ns3::NrCat4LbtAccessManager":
         total_experiments = 1
         total_tests = len(numUes) * len(Capc2Mcot) * len(Capc2CWMin) * len(Capc2CWMax)
         print("Running a total of ", total_experiments, " experiments with ", total_tests, "test cases")
-        for ue in numUes:
+        for ue in numUesPerGnb:
             print("Selecting ", ue, " ues for this run")
             for mcot in Capc2Mcot:
                 print("Selecting ", mcot, "ms as mcot for this run")

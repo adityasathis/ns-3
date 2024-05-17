@@ -195,6 +195,9 @@ UeManager::DoInitialize()
         rlc->SetRnti(m_rnti);
         rlc->SetLcId(lcid);
 
+        // CAPC of this is 0
+        rlc->m_capc = 0;
+
         m_srb0 = CreateObject<LteSignalingRadioBearerInfo>();
         m_srb0->m_rlc = rlc;
         m_srb0->m_srbIdentity = 0;
@@ -230,6 +233,9 @@ UeManager::DoInitialize()
         rlc->SetLteMacSapProvider(m_rrc->m_macSapProvider);
         rlc->SetRnti(m_rnti);
         rlc->SetLcId(lcid);
+
+        // CAPC will be 0
+        rlc->m_capc = 0;
 
         Ptr<LtePdcp> pdcp = CreateObject<LtePdcp>();
         pdcp->SetRnti(m_rnti);
@@ -448,6 +454,46 @@ UeManager::SetupDataRadioBearer(EpsBearer bearer,
     drbInfo->m_rlc = rlc;
 
     rlc->SetLcId(lcid);
+
+    // We will look at the QCI and determine how to assign the default CAPC
+    switch(rlc->m_qci) {
+      case 1:
+      case 3:
+      case 65:
+      case 66:
+      case 67:
+      case 5:
+      case 69:
+      case 70:
+      case 79:
+      case 80:
+      case 82:
+      case 83:
+      case 84:
+      case 85:
+      case 86:
+      case 87:
+      case 88:
+      case 89:
+      case 90: rlc->m_capc = 0; std::cout << "CAPC: " << +rlc->m_capc << "QCI: " << +rlc->m_qci << std::endl; break;
+
+      case 2:
+      case 71:
+      case 7: rlc->m_capc = 1; std::cout << "CAPC: " << +rlc->m_capc << "QCI: " << +rlc->m_qci << std::endl;  break;
+
+      case 4:
+      case 6:
+      case 8:
+      case 72:
+      case 73:
+      case 74:
+      case 76: rlc->m_capc = 2; std::cout << "CAPC: " << +rlc->m_capc << "QCI: " << +rlc->m_qci << std::endl;  break;
+      // case 10: 
+
+      case 9:
+      default: rlc->m_capc = 3; std::cout << "CAPC: " << +rlc->m_capc << "QCI: " << +rlc->m_qci << std::endl;  break;
+
+    }
 
     // we need PDCP only for real RLC, i.e., RLC/UM or RLC/AM
     // if we are using RLC/SM we don't care of anything above RLC

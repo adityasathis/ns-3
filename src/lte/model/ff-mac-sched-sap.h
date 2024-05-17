@@ -64,6 +64,7 @@ class FfMacSchedSapProvider
         uint32_t m_rlcRetransmissionQueueSize;   ///< RLC retransmission queue size
         uint16_t m_rlcRetransmissionHolDelay;    ///< RLC retransmission HOL delay
         uint16_t m_rlcStatusPduSize;             ///< RLC status PDU size
+        uint8_t m_capc;                          ///< CAPC
 
         std::vector<VendorSpecificListElement_s> m_vendorSpecificList; ///< vendor specific list
     };

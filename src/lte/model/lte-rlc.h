@@ -138,6 +138,8 @@ class LteRlc : public Object // SimpleRefCount<LteRlc>
     EpsBearer* bearer = NULL;
     EpsBearer::Qci m_qci{0};
 
+    uint8_t m_capc = 0;
+
     /// \todo MRE What is the sense to duplicate all the interfaces here???
     // NB to avoid the use of multiple inheritance
 

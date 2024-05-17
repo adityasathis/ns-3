@@ -178,6 +178,19 @@ LteRlcUm::DoNotifyTxOpportunity(LteMacSapUser::TxOpportunityParameters txOpParam
     Ptr<Packet> packet = Create<Packet>();
     LteRlcHeader rlcHeader;
 
+    m_totalBytes += txOpParams.bytes;
+
+    if (m_firstPacketTime == Seconds(0)) {
+      m_firstPacketTime = Simulator::Now();
+      m_avgThroughput   = 0;
+    } else {
+      m_avgThroughput =  static_cast<double>(txOpParams.bytes/(Simulator::Now() - m_firstPacketTime).GetSeconds());
+    }
+
+    // TBS given a single PRB
+    // This will give the channel quality.
+    m_cqi = txOpParams.cqi;
+
     // Build Data field
     uint32_t nextSegmentSize = txOpParams.bytes - 2;
     uint32_t nextSegmentId = 1;
@@ -1194,6 +1207,7 @@ LteRlcUm::DoReportBufferStatus()
     r.retxQueueSize = 0;
     r.retxQueueHolDelay = 0;
     r.statusPduSize = 0;
+    r.capc = m_capc;
 
     NS_LOG_LOGIC("Send ReportBufferStatus = " << r.txQueueSize << ", " << r.txQueueHolDelay);
     m_macSapProvider->ReportBufferStatus(r);
