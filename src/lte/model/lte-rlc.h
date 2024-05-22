@@ -137,6 +137,11 @@ class LteRlc : public Object // SimpleRefCount<LteRlc>
 
     EpsBearer* bearer = NULL;
     EpsBearer::Qci m_qci{0};
+    uint8_t m_priority;
+    uint16_t m_pdb;
+    uint64_t m_gfbr;
+    double m_ipThroughput;
+    double m_ipDelay;
 
     uint8_t m_capc = 0;
 
@@ -176,8 +181,8 @@ class LteRlc : public Object // SimpleRefCount<LteRlc>
     LteMacSapUser* m_macSapUser;         ///< MAC SAP user
     LteMacSapProvider* m_macSapProvider; ///< MAC SAP provider
 
-    uint16_t m_rnti; ///< RNTI
-    uint8_t m_lcid;  ///< LCID
+
+
     uint16_t m_packetDelayBudgetMs{
         UINT16_MAX}; //!< the packet delay budget in ms of the corresponding logical channel
 
@@ -194,6 +199,10 @@ class LteRlc : public Object // SimpleRefCount<LteRlc>
      * transmission.
      */
     TracedCallback<Ptr<const Packet>> m_txDropTrace;
+
+public:
+    uint16_t m_rnti; ///< RNTI
+        uint8_t m_lcid;  ///< LCID
 };
 
 /**

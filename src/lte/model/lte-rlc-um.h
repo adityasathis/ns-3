@@ -39,7 +39,7 @@ class LteRlcUm : public LteRlc
     uint32_t m_maxTxBufferSize; ///< maximum transmit buffer status
     uint32_t m_txBufferSize;    ///< transmit buffer size
     double m_avgThroughput;   ///< average throughput achieved in the RLC
-    uint64_t m_totalBytes;
+    uint64_t m_totalBytes = {0};
     Time     m_firstPacketTime = {Seconds(0)};
     uint8_t m_cqi = 0;
     

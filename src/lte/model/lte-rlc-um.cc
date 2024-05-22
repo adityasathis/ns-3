@@ -182,10 +182,12 @@ LteRlcUm::DoNotifyTxOpportunity(LteMacSapUser::TxOpportunityParameters txOpParam
 
     if (m_firstPacketTime == Seconds(0)) {
       m_firstPacketTime = Simulator::Now();
-      m_avgThroughput   = 0;
+      m_avgThroughput   = txOpParams.bytes * 10e-6;
     } else {
-      m_avgThroughput =  static_cast<double>(txOpParams.bytes/(Simulator::Now() - m_firstPacketTime).GetSeconds());
+      m_avgThroughput =  (static_cast<double>(txOpParams.bytes)/((Simulator::Now() - m_firstPacketTime).GetSeconds())) * 10e-6;
     }
+
+    // std::cout << this << ": Transmitting in CAPC " << +m_capc << " with instantaneous " << txOpParams.bytes << " and average " << m_avgThroughput << " at " << Simulator::Now().GetMicroSeconds() << "since " << m_firstPacketTime.GetMicroSeconds() << std::endl;
 
     // TBS given a single PRB
     // This will give the channel quality.
@@ -1208,6 +1210,8 @@ LteRlcUm::DoReportBufferStatus()
     r.retxQueueHolDelay = 0;
     r.statusPduSize = 0;
     r.capc = m_capc;
+
+    // std::cout << this << ": " << "Updating the buffer status report " << Simulator::Now() << std::endl;
 
     NS_LOG_LOGIC("Send ReportBufferStatus = " << r.txQueueSize << ", " << r.txQueueHolDelay);
     m_macSapProvider->ReportBufferStatus(r);

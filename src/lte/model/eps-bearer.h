@@ -241,7 +241,7 @@ class EpsBearer : public ObjectBase
      */
     double GetPacketErrorLossRate() const;
 
-  private:
+  // private:
     /**
      * \brief Hashing QCI
      *

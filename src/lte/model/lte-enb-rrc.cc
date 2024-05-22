@@ -449,6 +449,9 @@ UeManager::SetupDataRadioBearer(EpsBearer bearer,
     // Add this RLC to the list of instances
     rlc->bearer = &bearer;
     rlc->m_qci = bearer.qci;
+    rlc->m_priority = bearer.GetPriority();
+    rlc->m_pdb = bearer.GetPacketDelayBudgetMs();
+    rlc->m_gfbr = bearer.gbrQosInfo.gbrDl;
     m_rrc->rlc_pointers.push_back(rlc);
 
     drbInfo->m_rlc = rlc;
@@ -475,11 +478,11 @@ UeManager::SetupDataRadioBearer(EpsBearer bearer,
       case 87:
       case 88:
       case 89:
-      case 90: rlc->m_capc = 0; std::cout << "CAPC: " << +rlc->m_capc << "QCI: " << +rlc->m_qci << std::endl; break;
+      case 90: rlc->m_capc = 0; break;
 
       case 2:
       case 71:
-      case 7: rlc->m_capc = 1; std::cout << "CAPC: " << +rlc->m_capc << "QCI: " << +rlc->m_qci << std::endl;  break;
+      case 7: rlc->m_capc = 1; break;
 
       case 4:
       case 6:
@@ -487,11 +490,11 @@ UeManager::SetupDataRadioBearer(EpsBearer bearer,
       case 72:
       case 73:
       case 74:
-      case 76: rlc->m_capc = 2; std::cout << "CAPC: " << +rlc->m_capc << "QCI: " << +rlc->m_qci << std::endl;  break;
+      case 76: rlc->m_capc = 2; break;
       // case 10: 
 
       case 9:
-      default: rlc->m_capc = 3; std::cout << "CAPC: " << +rlc->m_capc << "QCI: " << +rlc->m_qci << std::endl;  break;
+      default: rlc->m_capc = 3; break;
 
     }
 

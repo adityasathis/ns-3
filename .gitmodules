@@ -4,3 +4,6 @@
 [submodule "contrib/nr"]
 	path = contrib/nr
 	url = git@github.com:adityasathis/ns-3-nr.git
+[submodule "contrib/ai"]
+  path = contrib/ai
+  url = git@github.com:adityasathis/ns3-ai.git
