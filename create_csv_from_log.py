@@ -19,7 +19,7 @@ for log_file in log_files:
     for line in lines:
         if line.startswith('OUTPUT'):
             columns = line.strip().split(',')
-            if columns[-1] != '3':
+            if (columns[1] != "wifi" and columns[-1] != '3') or (columns[1] == "wifi"):
                 output_lines.append(line)
     
     # Define the output file name
