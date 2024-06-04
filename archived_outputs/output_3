@@ -1,0 +1,1756 @@
+Consolidate compiler generated dependencies of target nru_wifi_qos
+[  0%] Building CXX object contrib/ai/examples/nru-wifi-qos/CMakeFiles/nru_wifi_qos.dir/nru-wifi-qos.cc.o
+[  0%] Linking CXX executable ../../../../../build/contrib/ai/examples/nru-wifi-qos/ns3.41-nru_wifi_qos-debug
+Checking where to assign this 0
+Adding a AP: 0,
+Checking where to assign this 1
+Adding a gNB: 1,
+Checking where to assign this 2
+Adding a AP: 2,
+Adding STA 50with address06-04-0c:00:00:01 in AP 0 to Priority 3
+Adding STA 200with address06-04-0c:00:01:01 in AP 2 to Priority 3
+Adding Ue 170with address 7.0.0.2 in AP 1 to Priority 3with GBR: 5000000 and PDB: 300
+Simulation Time: +1e-05s real time: 22h, 3m, 32s.
+Simulation Time: +0.01001s real time: 22h, 3m, 32s.
+Simulation Time: +0.02001s real time: 22h, 3m, 33s.
+Simulation Time: +0.03001s real time: 22h, 3m, 33s.
+Simulation Time: +0.04001s real time: 22h, 3m, 33s.
+Simulation Time: +0.05001s real time: 22h, 3m, 33s.
+Simulation Time: +0.06001s real time: 22h, 3m, 33s.
+Simulation Time: +0.07001s real time: 22h, 3m, 33s.
+Simulation Time: +0.08001s real time: 22h, 3m, 33s.
+Simulation Time: +0.09001s real time: 22h, 3m, 33s.
+Simulation Time: +0.10001s real time: 22h, 3m, 33s.
+Simulation Time: +0.11001s real time: 22h, 3m, 33s.
+Simulation Time: +0.12001s real time: 22h, 3m, 33s.
+Simulation Time: +0.13001s real time: 22h, 3m, 33s.
+Simulation Time: +0.14001s real time: 22h, 3m, 33s.
+Simulation Time: +0.15001s real time: 22h, 3m, 33s.
+Simulation Time: +0.16001s real time: 22h, 3m, 33s.
+Simulation Time: +0.17001s real time: 22h, 3m, 33s.
+Simulation Time: +0.18001s real time: 22h, 3m, 33s.
+Simulation Time: +0.19001s real time: 22h, 3m, 33s.
+Simulation Time: +0.20001s real time: 22h, 3m, 33s.
+Simulation Time: +0.21001s real time: 22h, 3m, 33s.
+HOL Packet Delay,4,217000000,16
+HOL Packet Delay,4,218500000,16
+Simulation Time: +0.22001s real time: 22h, 3m, 34s.
+Simulation Time: +0.23001s real time: 22h, 3m, 34s.
+HOL Packet Delay,4,233000000,32
+HOL Packet Delay,4,236000000,34
+HOL Packet Delay,4,238500000,32
+Simulation Time: +0.24001s real time: 22h, 3m, 34s.
+HOL Packet Delay,4,246000000,32
+HOL Packet Delay,4,248500000,29
+Simulation Time: +0.25001s real time: 22h, 3m, 34s.
+HOL Packet Delay,4,255500000,29
+Simulation Time: +0.26001s real time: 22h, 3m, 34s.
+HOL Packet Delay,4,261000000,26
+HOL Packet Delay,4,267500000,29
+HOL Packet Delay,4,270000000,24
+Simulation Time: +0.27001s real time: 22h, 3m, 35s.
+HOL Packet Delay,4,273000000,21
+HOL Packet Delay,4,279000000,21
+Simulation Time: +0.28001s real time: 22h, 3m, 35s.
+HOL Packet Delay,4,281500000,16
+HOL Packet Delay,4,282500000,16
+HOL Packet Delay,4,287000000,10
+Simulation Time: +0.29001s real time: 22h, 3m, 35s.
+HOL Packet Delay,4,291500000,8
+HOL Packet Delay,4,296000000,5
+Simulation Time: +0.30001s real time: 22h, 3m, 35s.
+HOL Packet Delay,4,300500000,5
+HOL Packet Delay,4,304500000,2
+Simulation Time: +0.31001s real time: 22h, 3m, 36s.
+HOL Packet Delay,4,317500000,10
+HOL Packet Delay,4,318500000,10
+Simulation Time: +0.32001s real time: 22h, 3m, 36s.
+HOL Packet Delay,4,322000000,2
+HOL Packet Delay,4,329500000,5
+Simulation Time: +0.33001s real time: 22h, 3m, 36s.
+HOL Packet Delay,4,333000000,2
+HOL Packet Delay,4,335500000,0
+HOL Packet Delay,4,336500000,0
+Simulation Time: +0.34001s real time: 22h, 3m, 36s.
+HOL Packet Delay,4,341500000,2
+HOL Packet Delay,4,349500000,5
+Simulation Time: +0.35001s real time: 22h, 3m, 37s.
+HOL Packet Delay,4,352500000,2
+Simulation Time: +0.36001s real time: 22h, 3m, 37s.
+HOL Packet Delay,4,361500000,5
+HOL Packet Delay,4,362500000,5
+Simulation Time: +0.37001s real time: 22h, 3m, 37s.
+HOL Packet Delay,4,374000000,10
+HOL Packet Delay,4,375000000,10
+HOL Packet Delay,4,378500000,2
+HOL Packet Delay,4,379500000,0
+Simulation Time: +0.38001s real time: 22h, 3m, 37s.
+HOL Packet Delay,4,385500000,2
+Simulation Time: +0.39001s real time: 22h, 3m, 37s.
+HOL Packet Delay,4,393500000,5
+HOL Packet Delay,4,395500000,2
+Simulation Time: +0.40001s real time: 22h, 3m, 38s.
+HOL Packet Delay,4,403000000,5
+HOL Packet Delay,4,405500000,2
+Simulation Time: +0.41001s real time: 22h, 3m, 38s.
+HOL Packet Delay,4,414500000,5
+Simulation Time: +0.42001s real time: 22h, 3m, 38s.
+HOL Packet Delay,4,421500000,8
+HOL Packet Delay,4,423000000,8
+HOL Packet Delay,4,428500000,2
+Simulation Time: +0.43001s real time: 22h, 3m, 38s.
+HOL Packet Delay,4,434500000,2
+Simulation Time: +0.44001s real time: 22h, 3m, 39s.
+Simulation Time: +0.45001s real time: 22h, 3m, 39s.
+HOL Packet Delay,4,451000000,16
+HOL Packet Delay,4,457500000,16
+Simulation Time: +0.46001s real time: 22h, 3m, 39s.
+HOL Packet Delay,4,465500000,18
+Simulation Time: +0.47001s real time: 22h, 3m, 39s.
+Simulation Time: +0.48001s real time: 22h, 3m, 39s.
+HOL Packet Delay,4,482000000,26
+HOL Packet Delay,4,485000000,24
+HOL Packet Delay,4,486000000,21
+Simulation Time: +0.49001s real time: 22h, 3m, 39s.
+HOL Packet Delay,4,491500000,18
+HOL Packet Delay,4,495000000,16
+HOL Packet Delay,4,499500000,16
+Simulation Time: +0.50001s real time: 22h, 3m, 40s.
+HOL Packet Delay,4,506500000,13
+Simulation Time: +0.51001s real time: 22h, 3m, 40s.
+HOL Packet Delay,4,511000000,13
+HOL Packet Delay,4,514000000,8
+HOL Packet Delay,4,518000000,8
+Simulation Time: +0.52001s real time: 22h, 3m, 40s.
+HOL Packet Delay,4,522500000,5
+HOL Packet Delay,4,523500000,0
+Simulation Time: +0.53001s real time: 22h, 3m, 40s.
+HOL Packet Delay,4,532000000,5
+Simulation Time: +0.54001s real time: 22h, 3m, 41s.
+Simulation Time: +0.55001s real time: 22h, 3m, 41s.
+HOL Packet Delay,4,558500000,26
+Simulation Time: +0.56001s real time: 22h, 3m, 41s.
+HOL Packet Delay,4,567000000,29
+Simulation Time: +0.57001s real time: 22h, 3m, 41s.
+HOL Packet Delay,4,570500000,24
+HOL Packet Delay,4,576500000,26
+HOL Packet Delay,4,580000000,24
+Simulation Time: +0.58001s real time: 22h, 3m, 42s.
+HOL Packet Delay,4,585500000,21
+HOL Packet Delay,4,588500000,18
+Simulation Time: +0.59001s real time: 22h, 3m, 42s.
+HOL Packet Delay,4,591000000,13
+Simulation Time: +0.60001s real time: 22h, 3m, 42s.
+HOL Packet Delay,4,607000000,24
+Simulation Time: +0.61001s real time: 22h, 3m, 43s.
+HOL Packet Delay,4,615000000,26
+Simulation Time: +0.62001s real time: 22h, 3m, 43s.
+Simulation Time: +0.63001s real time: 22h, 3m, 43s.
+HOL Packet Delay,4,632500000,37
+HOL Packet Delay,4,635500000,34
+Simulation Time: +0.64001s real time: 22h, 3m, 44s.
+Simulation Time: +0.65001s real time: 22h, 3m, 44s.
+HOL Packet Delay,4,659000000,50
+Simulation Time: +0.66001s real time: 22h, 3m, 44s.
+HOL Packet Delay,4,666000000,50
+HOL Packet Delay,4,667000000,48
+Simulation Time: +0.67001s real time: 22h, 3m, 44s.
+HOL Packet Delay,4,676500000,48
+Simulation Time: +0.68001s real time: 22h, 3m, 44s.
+HOL Packet Delay,4,680500000,48
+Simulation Time: +0.69001s real time: 22h, 3m, 45s.
+Simulation Time: +0.70001s real time: 22h, 3m, 45s.
+Simulation Time: +0.71001s real time: 22h, 3m, 45s.
+Simulation Time: +0.72001s real time: 22h, 3m, 45s.
+HOL Packet Delay,4,722500000,82
+HOL Packet Delay,4,725000000,77
+HOL Packet Delay,4,729000000,77
+Simulation Time: +0.73001s real time: 22h, 3m, 45s.
+HOL Packet Delay,4,734000000,74
+Simulation Time: +0.74001s real time: 22h, 3m, 46s.
+HOL Packet Delay,4,742000000,77
+HOL Packet Delay,4,745500000,74
+HOL Packet Delay,4,748000000,69
+Simulation Time: +0.75001s real time: 22h, 3m, 46s.
+HOL Packet Delay,4,752000000,66
+HOL Packet Delay,4,755000000,64
+HOL Packet Delay,4,759000000,61
+Simulation Time: +0.76001s real time: 22h, 3m, 46s.
+HOL Packet Delay,4,765000000,61
+Simulation Time: +0.77001s real time: 22h, 3m, 46s.
+HOL Packet Delay,4,770500000,58
+HOL Packet Delay,4,773500000,58
+HOL Packet Delay,4,776000000,58
+HOL Packet Delay,4,778500000,48
+Simulation Time: +0.78001s real time: 22h, 3m, 46s.
+HOL Packet Delay,4,782000000,48
+HOL Packet Delay,4,783000000,48
+HOL Packet Delay,4,786500000,37
+Simulation Time: +0.79001s real time: 22h, 3m, 47s.
+HOL Packet Delay,4,799500000,45
+Simulation Time: +0.80001s real time: 22h, 3m, 47s.
+Simulation Time: +0.81001s real time: 22h, 3m, 48s.
+HOL Packet Delay,4,815000000,53
+Simulation Time: +0.82001s real time: 22h, 3m, 48s.
+HOL Packet Delay,4,828000000,61
+Simulation Time: +0.83001s real time: 22h, 3m, 48s.
+HOL Packet Delay,4,833000000,61
+HOL Packet Delay,4,835500000,56
+HOL Packet Delay,4,836500000,56
+Simulation Time: +0.84001s real time: 22h, 3m, 49s.
+HOL Packet Delay,4,842000000,50
+HOL Packet Delay,4,844500000,45
+HOL Packet Delay,4,849500000,45
+Simulation Time: +0.85001s real time: 22h, 3m, 49s.
+HOL Packet Delay,4,853500000,42
+Simulation Time: +0.86001s real time: 22h, 3m, 49s.
+HOL Packet Delay,4,861000000,42
+Simulation Time: +0.87001s real time: 22h, 3m, 50s.
+HOL Packet Delay,4,870500000,48
+HOL Packet Delay,4,871500000,48
+HOL Packet Delay,4,874500000,37
+HOL Packet Delay,4,879000000,37
+Simulation Time: +0.88001s real time: 22h, 3m, 50s.
+HOL Packet Delay,4,881500000,32
+HOL Packet Delay,4,887000000,32
+HOL Packet Delay,4,889500000,26
+Simulation Time: +0.89001s real time: 22h, 3m, 50s.
+HOL Packet Delay,4,893000000,24
+HOL Packet Delay,4,896000000,21
+HOL Packet Delay,4,897000000,16
+Simulation Time: +0.90001s real time: 22h, 3m, 50s.
+HOL Packet Delay,4,900500000,13
+HOL Packet Delay,4,906000000,13
+Simulation Time: +0.91001s real time: 22h, 3m, 51s.
+HOL Packet Delay,4,911000000,10
+HOL Packet Delay,4,917500000,13
+Simulation Time: +0.92001s real time: 22h, 3m, 51s.
+HOL Packet Delay,4,922000000,10
+HOL Packet Delay,4,925500000,8
+Simulation Time: +0.93001s real time: 22h, 3m, 51s.
+HOL Packet Delay,4,931500000,8
+Simulation Time: +0.94001s real time: 22h, 3m, 51s.
+HOL Packet Delay,4,944000000,10
+HOL Packet Delay,4,948500000,10
+HOL Packet Delay,4,949500000,8
+Simulation Time: +0.95001s real time: 22h, 3m, 52s.
+HOL Packet Delay,4,955000000,5
+Simulation Time: +0.96001s real time: 22h, 3m, 52s.
+HOL Packet Delay,4,963500000,8
+Simulation Time: +0.97001s real time: 22h, 3m, 52s.
+HOL Packet Delay,4,977000000,16
+Simulation Time: +0.98001s real time: 22h, 3m, 52s.
+HOL Packet Delay,4,981000000,10
+HOL Packet Delay,4,985000000,10
+Simulation Time: +0.99001s real time: 22h, 3m, 53s.
+HOL Packet Delay,4,991000000,8
+HOL Packet Delay,4,1000000000,10
+Simulation Time: +1.00001s real time: 22h, 3m, 53s.
+HOL Packet Delay,4,1002500000,8
+HOL Packet Delay,4,1005500000,5
+HOL Packet Delay,4,1008500000,2
+Simulation Time: +1.01001s real time: 22h, 3m, 54s.
+HOL Packet Delay,4,1014500000,2
+Simulation Time: +1.02001s real time: 22h, 3m, 54s.
+Simulation Time: +1.03001s real time: 22h, 3m, 55s.
+Simulation Time: +1.04001s real time: 22h, 3m, 55s.
+Simulation Time: +1.05001s real time: 22h, 3m, 55s.
+Simulation Time: +1.06001s real time: 22h, 3m, 56s.
+HOL Packet Delay,4,1070000000,53
+Simulation Time: +1.07001s real time: 22h, 3m, 56s.
+Simulation Time: +1.08001s real time: 22h, 3m, 56s.
+HOL Packet Delay,4,1080500000,58
+Simulation Time: +1.09001s real time: 22h, 3m, 57s.
+Simulation Time: +1.10001s real time: 22h, 3m, 57s.
+HOL Packet Delay,4,1102000000,74
+HOL Packet Delay,4,1108000000,72
+Simulation Time: +1.11001s real time: 22h, 3m, 58s.
+HOL Packet Delay,4,1112500000,72
+HOL Packet Delay,4,1119500000,72
+Simulation Time: +1.12001s real time: 22h, 3m, 58s.
+HOL Packet Delay,4,1123000000,69
+HOL Packet Delay,4,1126500000,66
+HOL Packet Delay,4,1127500000,66
+Simulation Time: +1.13001s real time: 22h, 3m, 58s.
+HOL Packet Delay,4,1134000000,61
+HOL Packet Delay,4,1139000000,61
+Simulation Time: +1.14001s real time: 22h, 3m, 59s.
+HOL Packet Delay,4,1142500000,56
+HOL Packet Delay,4,1146500000,53
+HOL Packet Delay,4,1150000000,53
+Simulation Time: +1.15001s real time: 22h, 3m, 59s.
+HOL Packet Delay,4,1151000000,53
+HOL Packet Delay,4,1156000000,45
+HOL Packet Delay,4,1158500000,42
+Simulation Time: +1.16001s real time: 22h, 3m, 59s.
+HOL Packet Delay,4,1164000000,40
+HOL Packet Delay,4,1168000000,37
+Simulation Time: +1.17001s real time: 22h, 4m, 0s.
+HOL Packet Delay,4,1174000000,37
+Simulation Time: +1.18001s real time: 22h, 4m, 0s.
+HOL Packet Delay,4,1181500000,40
+HOL Packet Delay,4,1184000000,40
+HOL Packet Delay,4,1187000000,32
+HOL Packet Delay,4,1190000000,29
+Simulation Time: +1.19001s real time: 22h, 4m, 0s.
+HOL Packet Delay,4,1194500000,24
+HOL Packet Delay,4,1199000000,24
+Simulation Time: +1.20001s real time: 22h, 4m, 1s.
+HOL Packet Delay,4,1203000000,24
+HOL Packet Delay,4,1206000000,18
+HOL Packet Delay,4,1207000000,18
+Simulation Time: +1.21001s real time: 22h, 4m, 1s.
+HOL Packet Delay,4,1211000000,13
+HOL Packet Delay,4,1213500000,8
+HOL Packet Delay,4,1214500000,8
+Simulation Time: +1.22001s real time: 22h, 4m, 2s.
+HOL Packet Delay,4,1224000000,5
+HOL Packet Delay,4,1225000000,2
+Simulation Time: +1.23001s real time: 22h, 4m, 2s.
+Simulation Time: +1.24001s real time: 22h, 4m, 3s.
+Simulation Time: +1.25001s real time: 22h, 4m, 3s.
+Simulation Time: +1.26001s real time: 22h, 4m, 3s.
+Simulation Time: +1.27001s real time: 22h, 4m, 4s.
+HOL Packet Delay,4,1279000000,50
+Simulation Time: +1.28001s real time: 22h, 4m, 4s.
+Simulation Time: +1.29001s real time: 22h, 4m, 4s.
+HOL Packet Delay,4,1300000000,66
+Simulation Time: +1.30001s real time: 22h, 4m, 5s.
+HOL Packet Delay,4,1310000000,72
+Simulation Time: +1.31001s real time: 22h, 4m, 5s.
+HOL Packet Delay,4,1319500000,72
+Simulation Time: +1.32001s real time: 22h, 4m, 5s.
+HOL Packet Delay,4,1328500000,77
+Simulation Time: +1.33001s real time: 22h, 4m, 6s.
+HOL Packet Delay,4,1333000000,74
+HOL Packet Delay,4,1336000000,69
+HOL Packet Delay,4,1339000000,69
+Simulation Time: +1.34001s real time: 22h, 4m, 6s.
+HOL Packet Delay,4,1341500000,64
+HOL Packet Delay,4,1344000000,64
+HOL Packet Delay,4,1348000000,58
+Simulation Time: +1.35001s real time: 22h, 4m, 6s.
+HOL Packet Delay,4,1351000000,53
+HOL Packet Delay,4,1352000000,53
+HOL Packet Delay,4,1357000000,48
+Simulation Time: +1.36001s real time: 22h, 4m, 7s.
+HOL Packet Delay,4,1362000000,45
+HOL Packet Delay,4,1370000000,48
+Simulation Time: +1.37001s real time: 22h, 4m, 7s.
+HOL Packet Delay,4,1371000000,42
+HOL Packet Delay,4,1374500000,40
+HOL Packet Delay,4,1377000000,37
+Simulation Time: +1.38001s real time: 22h, 4m, 8s.
+HOL Packet Delay,4,1380500000,32
+HOL Packet Delay,4,1384000000,29
+Simulation Time: +1.39001s real time: 22h, 4m, 8s.
+HOL Packet Delay,4,1391500000,32
+HOL Packet Delay,4,1396000000,29
+HOL Packet Delay,4,1400000000,26
+Simulation Time: +1.40001s real time: 22h, 4m, 9s.
+HOL Packet Delay,4,1401000000,21
+HOL Packet Delay,4,1404000000,18
+HOL Packet Delay,4,1407000000,16
+HOL Packet Delay,4,1410000000,10
+Simulation Time: +1.41001s real time: 22h, 4m, 9s.
+HOL Packet Delay,4,1411000000,8
+HOL Packet Delay,4,1414000000,5
+HOL Packet Delay,4,1418500000,2
+Simulation Time: +1.42001s real time: 22h, 4m, 10s.
+HOL Packet Delay,4,1422500000,2
+Simulation Time: +1.43001s real time: 22h, 4m, 10s.
+HOL Packet Delay,4,1434500000,8
+HOL Packet Delay,4,1437500000,8
+Simulation Time: +1.44001s real time: 22h, 4m, 10s.
+Simulation Time: +1.45001s real time: 22h, 4m, 11s.
+HOL Packet Delay,4,1455000000,18
+Simulation Time: +1.46001s real time: 22h, 4m, 11s.
+HOL Packet Delay,4,1461500000,18
+HOL Packet Delay,4,1465500000,16
+Simulation Time: +1.47001s real time: 22h, 4m, 12s.
+HOL Packet Delay,4,1474000000,18
+Simulation Time: +1.48001s real time: 22h, 4m, 12s.
+Simulation Time: +1.49001s real time: 22h, 4m, 12s.
+HOL Packet Delay,4,1491000000,29
+HOL Packet Delay,4,1496500000,29
+HOL Packet Delay,4,1499500000,24
+Simulation Time: +1.50001s real time: 22h, 4m, 13s.
+HOL Packet Delay,4,1500500000,24
+HOL Packet Delay,4,1506000000,18
+Simulation Time: +1.51001s real time: 22h, 4m, 13s.
+HOL Packet Delay,4,1511000000,16
+HOL Packet Delay,4,1514500000,13
+HOL Packet Delay,4,1518000000,13
+Simulation Time: +1.52001s real time: 22h, 4m, 14s.
+HOL Packet Delay,4,1521000000,8
+HOL Packet Delay,4,1522000000,8
+HOL Packet Delay,4,1527500000,2
+HOL Packet Delay,4,1530000000,0
+Simulation Time: +1.53001s real time: 22h, 4m, 14s.
+HOL Packet Delay,4,1532500000,0
+HOL Packet Delay,4,1536500000,2
+Simulation Time: +1.54001s real time: 22h, 4m, 15s.
+HOL Packet Delay,4,1550000000,10
+Simulation Time: +1.55001s real time: 22h, 4m, 15s.
+Simulation Time: +1.56001s real time: 22h, 4m, 16s.
+HOL Packet Delay,4,1564500000,18
+HOL Packet Delay,4,1566500000,16
+Simulation Time: +1.57001s real time: 22h, 4m, 16s.
+HOL Packet Delay,4,1571500000,13
+HOL Packet Delay,4,1574500000,10
+HOL Packet Delay,4,1578500000,8
+Simulation Time: +1.58001s real time: 22h, 4m, 17s.
+HOL Packet Delay,4,1582500000,5
+HOL Packet Delay,4,1588000000,5
+Simulation Time: +1.59001s real time: 22h, 4m, 17s.
+HOL Packet Delay,4,1597500000,8
+Simulation Time: +1.60001s real time: 22h, 4m, 18s.
+HOL Packet Delay,4,1601500000,5
+HOL Packet Delay,4,1605000000,2
+Simulation Time: +1.61001s real time: 22h, 4m, 18s.
+HOL Packet Delay,4,1610500000,2
+HOL Packet Delay,4,1615500000,2
+Simulation Time: +1.62001s real time: 22h, 4m, 18s.
+HOL Packet Delay,4,1623000000,5
+HOL Packet Delay,4,1627000000,5
+Simulation Time: +1.63001s real time: 22h, 4m, 19s.
+HOL Packet Delay,4,1636500000,8
+Simulation Time: +1.64001s real time: 22h, 4m, 19s.
+HOL Packet Delay,4,1645000000,8
+HOL Packet Delay,4,1648000000,5
+Simulation Time: +1.65001s real time: 22h, 4m, 19s.
+HOL Packet Delay,4,1650500000,2
+HOL Packet Delay,4,1655500000,2
+HOL Packet Delay,4,1659000000,2
+Simulation Time: +1.66001s real time: 22h, 4m, 20s.
+HOL Packet Delay,4,1665000000,2
+Simulation Time: +1.67001s real time: 22h, 4m, 21s.
+HOL Packet Delay,4,1674000000,5
+HOL Packet Delay,4,1675000000,2
+Simulation Time: +1.68001s real time: 22h, 4m, 21s.
+HOL Packet Delay,4,1680500000,2
+HOL Packet Delay,4,1690000000,5
+Simulation Time: +1.69001s real time: 22h, 4m, 21s.
+Simulation Time: +1.70001s real time: 22h, 4m, 22s.
+HOL Packet Delay,4,1710000000,21
+Simulation Time: +1.71001s real time: 22h, 4m, 22s.
+Simulation Time: +1.72001s real time: 22h, 4m, 23s.
+HOL Packet Delay,4,1728500000,34
+Simulation Time: +1.73001s real time: 22h, 4m, 23s.
+HOL Packet Delay,4,1733000000,29
+HOL Packet Delay,4,1736000000,26
+HOL Packet Delay,4,1737000000,24
+Simulation Time: +1.74001s real time: 22h, 4m, 24s.
+HOL Packet Delay,4,1742000000,21
+HOL Packet Delay,4,1745500000,18
+HOL Packet Delay,4,1746500000,18
+Simulation Time: +1.75001s real time: 22h, 4m, 24s.
+HOL Packet Delay,4,1752500000,13
+Simulation Time: +1.76001s real time: 22h, 4m, 25s.
+HOL Packet Delay,4,1761500000,16
+HOL Packet Delay,4,1765500000,16
+Simulation Time: +1.77001s real time: 22h, 4m, 25s.
+HOL Packet Delay,4,1776000000,16
+Simulation Time: +1.78001s real time: 22h, 4m, 25s.
+HOL Packet Delay,4,1782000000,18
+HOL Packet Delay,4,1786500000,13
+Simulation Time: +1.79001s real time: 22h, 4m, 26s.
+HOL Packet Delay,4,1790500000,13
+HOL Packet Delay,4,1795000000,13
+HOL Packet Delay,4,1796000000,13
+HOL Packet Delay,4,1799500000,2
+Simulation Time: +1.80001s real time: 22h, 4m, 27s.
+HOL Packet Delay,4,1803000000,2
+HOL Packet Delay,4,1809500000,2
+Simulation Time: +1.81001s real time: 22h, 4m, 27s.
+HOL Packet Delay,4,1818000000,5
+Simulation Time: +1.82001s real time: 22h, 4m, 27s.
+HOL Packet Delay,4,1820500000,2
+HOL Packet Delay,4,1822500000,0
+Simulation Time: +1.83001s real time: 22h, 4m, 28s.
+HOL Packet Delay,4,1836000000,10
+HOL Packet Delay,4,1839000000,8
+Simulation Time: +1.84001s real time: 22h, 4m, 29s.
+Simulation Time: +1.85001s real time: 22h, 4m, 29s.
+HOL Packet Delay,4,1856000000,18
+Simulation Time: +1.86001s real time: 22h, 4m, 30s.
+HOL Packet Delay,4,1861000000,16
+HOL Packet Delay,4,1864500000,16
+HOL Packet Delay,4,1868500000,13
+Simulation Time: +1.87001s real time: 22h, 4m, 30s.
+HOL Packet Delay,4,1871000000,8
+HOL Packet Delay,4,1874500000,5
+HOL Packet Delay,4,1878000000,2
+Simulation Time: +1.88001s real time: 22h, 4m, 31s.
+Simulation Time: +1.89001s real time: 22h, 4m, 31s.
+Simulation Time: +1.90001s real time: 22h, 4m, 32s.
+Simulation Time: +1.91001s real time: 22h, 4m, 32s.
+Simulation Time: +1.92001s real time: 22h, 4m, 33s.
+HOL Packet Delay,4,1923000000,42
+HOL Packet Delay,4,1924500000,42
+HOL Packet Delay,4,1927000000,34
+Simulation Time: +1.93001s real time: 22h, 4m, 33s.
+HOL Packet Delay,4,1933000000,32
+HOL Packet Delay,4,1936000000,29
+HOL Packet Delay,4,1939000000,29
+HOL Packet Delay,4,1940000000,29
+Simulation Time: +1.94001s real time: 22h, 4m, 34s.
+HOL Packet Delay,4,1942500000,18
+HOL Packet Delay,4,1948500000,18
+Simulation Time: +1.95001s real time: 22h, 4m, 34s.
+HOL Packet Delay,4,1958500000,21
+Simulation Time: +1.96001s real time: 22h, 4m, 35s.
+HOL Packet Delay,4,1966000000,24
+Simulation Time: +1.97001s real time: 22h, 4m, 36s.
+HOL Packet Delay,4,1972500000,21
+HOL Packet Delay,4,1975500000,18
+HOL Packet Delay,4,1979000000,18
+Simulation Time: +1.98001s real time: 22h, 4m, 36s.
+HOL Packet Delay,4,1982000000,13
+HOL Packet Delay,4,1985000000,10
+Simulation Time: +1.99001s real time: 22h, 4m, 37s.
+HOL Packet Delay,4,1991000000,8
+HOL Packet Delay,4,1998500000,10
+Simulation Time: +2.00001s real time: 22h, 4m, 37s.
+Simulation Time: +2.01001s real time: 22h, 4m, 38s.
+Simulation Time: +2.02001s real time: 22h, 4m, 38s.
+Simulation Time: +2.03001s real time: 22h, 4m, 39s.
+HOL Packet Delay,4,2036000000,42
+HOL Packet Delay,4,2040000000,37
+Simulation Time: +2.04001s real time: 22h, 4m, 39s.
+HOL Packet Delay,4,2046000000,40
+Simulation Time: +2.05001s real time: 22h, 4m, 40s.
+HOL Packet Delay,4,2052000000,37
+HOL Packet Delay,4,2058500000,37
+Simulation Time: +2.06001s real time: 22h, 4m, 40s.
+HOL Packet Delay,4,2062000000,37
+HOL Packet Delay,4,2065500000,32
+HOL Packet Delay,4,2069000000,29
+Simulation Time: +2.07001s real time: 22h, 4m, 41s.
+Simulation Time: +2.08001s real time: 22h, 4m, 42s.
+Simulation Time: +2.09001s real time: 22h, 4m, 42s.
+Simulation Time: +2.10001s real time: 22h, 4m, 42s.
+HOL Packet Delay,4,2109000000,61
+Simulation Time: +2.11001s real time: 22h, 4m, 43s.
+Simulation Time: +2.12001s real time: 22h, 4m, 43s.
+Simulation Time: +2.13001s real time: 22h, 4m, 44s.
+HOL Packet Delay,4,2135000000,82
+HOL Packet Delay,4,2137500000,80
+Simulation Time: +2.14001s real time: 22h, 4m, 45s.
+HOL Packet Delay,4,2145000000,80
+HOL Packet Delay,4,2149000000,77
+Simulation Time: +2.15001s real time: 22h, 4m, 45s.
+HOL Packet Delay,4,2155000000,80
+HOL Packet Delay,4,2158500000,74
+Simulation Time: +2.16001s real time: 22h, 4m, 45s.
+HOL Packet Delay,4,2162500000,72
+HOL Packet Delay,4,2167000000,69
+Simulation Time: +2.17001s real time: 22h, 4m, 46s.
+HOL Packet Delay,4,2170500000,66
+HOL Packet Delay,4,2171500000,64
+HOL Packet Delay,4,2174000000,58
+HOL Packet Delay,4,2176500000,56
+Simulation Time: +2.18001s real time: 22h, 4m, 47s.
+HOL Packet Delay,4,2180500000,53
+HOL Packet Delay,4,2184000000,48
+HOL Packet Delay,4,2186500000,45
+HOL Packet Delay,4,2189500000,42
+Simulation Time: +2.19001s real time: 22h, 4m, 48s.
+HOL Packet Delay,4,2193500000,40
+Simulation Time: +2.20001s real time: 22h, 4m, 48s.
+Simulation Time: +2.21001s real time: 22h, 4m, 49s.
+HOL Packet Delay,4,2219500000,61
+Simulation Time: +2.22001s real time: 22h, 4m, 50s.
+HOL Packet Delay,4,2222000000,56
+HOL Packet Delay,4,2226500000,53
+HOL Packet Delay,4,2229000000,48
+HOL Packet Delay,4,2230000000,45
+Simulation Time: +2.23001s real time: 22h, 4m, 51s.
+HOL Packet Delay,4,2234000000,42
+HOL Packet Delay,4,2238000000,40
+Simulation Time: +2.24001s real time: 22h, 4m, 51s.
+HOL Packet Delay,4,2241000000,37
+HOL Packet Delay,4,2246500000,37
+Simulation Time: +2.25001s real time: 22h, 4m, 52s.
+HOL Packet Delay,4,2253500000,37
+HOL Packet Delay,4,2257000000,34
+HOL Packet Delay,4,2258000000,34
+Simulation Time: +2.26001s real time: 22h, 4m, 52s.
+HOL Packet Delay,4,2262000000,26
+HOL Packet Delay,4,2264500000,24
+Simulation Time: +2.27001s real time: 22h, 4m, 53s.
+HOL Packet Delay,4,2273500000,24
+HOL Packet Delay,4,2280000000,24
+Simulation Time: +2.28001s real time: 22h, 4m, 53s.
+HOL Packet Delay,4,2283500000,24
+HOL Packet Delay,4,2286000000,18
+HOL Packet Delay,4,2290000000,16
+Simulation Time: +2.29001s real time: 22h, 4m, 54s.
+HOL Packet Delay,4,2292500000,13
+HOL Packet Delay,4,2296500000,10
+Simulation Time: +2.30001s real time: 22h, 4m, 55s.
+HOL Packet Delay,4,2300500000,8
+HOL Packet Delay,4,2303000000,2
+Simulation Time: +2.31001s real time: 22h, 4m, 56s.
+HOL Packet Delay,4,2311500000,5
+HOL Packet Delay,4,2319000000,8
+Simulation Time: +2.32001s real time: 22h, 4m, 56s.
+HOL Packet Delay,4,2320500000,5
+HOL Packet Delay,4,2327500000,2
+HOL Packet Delay,4,2329000000,0
+Simulation Time: +2.33001s real time: 22h, 4m, 57s.
+Simulation Time: +2.34001s real time: 22h, 4m, 57s.
+HOL Packet Delay,4,2348500000,16
+Simulation Time: +2.35001s real time: 22h, 4m, 58s.
+Simulation Time: +2.36001s real time: 22h, 4m, 58s.
+Simulation Time: +2.37001s real time: 22h, 4m, 59s.
+HOL Packet Delay,4,2380000000,42
+Simulation Time: +2.38001s real time: 22h, 4m, 59s.
+Simulation Time: +2.39001s real time: 22h, 5m, 0s.
+HOL Packet Delay,4,2394000000,50
+HOL Packet Delay,4,2399500000,48
+Simulation Time: +2.40001s real time: 22h, 5m, 1s.
+HOL Packet Delay,4,2402000000,45
+Simulation Time: +2.41001s real time: 22h, 5m, 2s.
+HOL Packet Delay,4,2411000000,50
+Simulation Time: +2.42001s real time: 22h, 5m, 3s.
+Simulation Time: +2.43001s real time: 22h, 5m, 3s.
+HOL Packet Delay,4,2437500000,69
+Simulation Time: +2.44001s real time: 22h, 5m, 4s.
+HOL Packet Delay,4,2445500000,72
+HOL Packet Delay,4,2448500000,66
+Simulation Time: +2.45001s real time: 22h, 5m, 5s.
+HOL Packet Delay,4,2453500000,66
+HOL Packet Delay,4,2456500000,64
+HOL Packet Delay,4,2459000000,58
+Simulation Time: +2.46001s real time: 22h, 5m, 5s.
+HOL Packet Delay,4,2462000000,56
+HOL Packet Delay,4,2463000000,56
+HOL Packet Delay,4,2468500000,48
+Simulation Time: +2.47001s real time: 22h, 5m, 6s.
+Simulation Time: +2.48001s real time: 22h, 5m, 7s.
+Simulation Time: +2.49001s real time: 22h, 5m, 8s.
+HOL Packet Delay,4,2492500000,66
+HOL Packet Delay,4,2496000000,61
+Simulation Time: +2.50001s real time: 22h, 5m, 9s.
+Simulation Time: +2.51001s real time: 22h, 5m, 10s.
+Simulation Time: +2.52001s real time: 22h, 5m, 11s.
+HOL Packet Delay,4,2521000000,82
+HOL Packet Delay,4,2524500000,80
+HOL Packet Delay,4,2527500000,74
+HOL Packet Delay,4,2528500000,72
+Simulation Time: +2.53001s real time: 22h, 5m, 11s.
+HOL Packet Delay,4,2532500000,69
+HOL Packet Delay,4,2539000000,69
+Simulation Time: +2.54001s real time: 22h, 5m, 12s.
+HOL Packet Delay,4,2542500000,66
+HOL Packet Delay,4,2546000000,61
+HOL Packet Delay,4,2548500000,58
+Simulation Time: +2.55001s real time: 22h, 5m, 12s.
+HOL Packet Delay,4,2551000000,56
+HOL Packet Delay,4,2552000000,56
+HOL Packet Delay,4,2556000000,48
+HOL Packet Delay,4,2559500000,45
+Simulation Time: +2.56001s real time: 22h, 5m, 13s.
+HOL Packet Delay,4,2564000000,42
+HOL Packet Delay,4,2567500000,40
+Simulation Time: +2.57001s real time: 22h, 5m, 14s.
+HOL Packet Delay,4,2576000000,42
+HOL Packet Delay,4,2579500000,40
+Simulation Time: +2.58001s real time: 22h, 5m, 14s.
+HOL Packet Delay,4,2582500000,37
+HOL Packet Delay,4,2585000000,32
+HOL Packet Delay,4,2589500000,32
+Simulation Time: +2.59001s real time: 22h, 5m, 15s.
+HOL Packet Delay,4,2593000000,29
+HOL Packet Delay,4,2598500000,26
+Simulation Time: +2.60001s real time: 22h, 5m, 16s.
+HOL Packet Delay,4,2601000000,24
+Simulation Time: +2.61001s real time: 22h, 5m, 16s.
+Simulation Time: +2.62001s real time: 22h, 5m, 17s.
+HOL Packet Delay,4,2621000000,34
+HOL Packet Delay,4,2627500000,37
+Simulation Time: +2.63001s real time: 22h, 5m, 18s.
+HOL Packet Delay,4,2635500000,40
+HOL Packet Delay,4,2638000000,34
+Simulation Time: +2.64001s real time: 22h, 5m, 18s.
+HOL Packet Delay,4,2640500000,32
+HOL Packet Delay,4,2643000000,26
+HOL Packet Delay,4,2646000000,24
+HOL Packet Delay,4,2647000000,24
+HOL Packet Delay,4,2649500000,13
+Simulation Time: +2.65001s real time: 22h, 5m, 19s.
+HOL Packet Delay,4,2652500000,10
+Simulation Time: +2.66001s real time: 22h, 5m, 19s.
+Simulation Time: +2.67001s real time: 22h, 5m, 20s.
+HOL Packet Delay,4,2672000000,24
+Simulation Time: +2.68001s real time: 22h, 5m, 21s.
+Simulation Time: +2.69001s real time: 22h, 5m, 22s.
+HOL Packet Delay,4,2692000000,37
+HOL Packet Delay,4,2698500000,37
+Simulation Time: +2.70001s real time: 22h, 5m, 22s.
+HOL Packet Delay,4,2704000000,34
+HOL Packet Delay,4,2705000000,32
+Simulation Time: +2.71001s real time: 22h, 5m, 23s.
+HOL Packet Delay,4,2710500000,32
+HOL Packet Delay,4,2714000000,26
+HOL Packet Delay,4,2717000000,24
+Simulation Time: +2.72001s real time: 22h, 5m, 24s.
+HOL Packet Delay,4,2725500000,29
+HOL Packet Delay,4,2730000000,24
+Simulation Time: +2.73001s real time: 22h, 5m, 24s.
+HOL Packet Delay,4,2731000000,21
+HOL Packet Delay,4,2735000000,18
+HOL Packet Delay,4,2737500000,13
+Simulation Time: +2.74001s real time: 22h, 5m, 25s.
+HOL Packet Delay,4,2741000000,10
+Simulation Time: +2.75001s real time: 22h, 5m, 26s.
+HOL Packet Delay,4,2750500000,16
+HOL Packet Delay,4,2758000000,16
+Simulation Time: +2.76001s real time: 22h, 5m, 26s.
+HOL Packet Delay,4,2762500000,13
+Simulation Time: +2.77001s real time: 22h, 5m, 27s.
+HOL Packet Delay,4,2771000000,16
+Simulation Time: +2.78001s real time: 22h, 5m, 28s.
+Simulation Time: +2.79001s real time: 22h, 5m, 29s.
+HOL Packet Delay,4,2798500000,37
+Simulation Time: +2.80001s real time: 22h, 5m, 29s.
+HOL Packet Delay,4,2802500000,34
+Simulation Time: +2.81001s real time: 22h, 5m, 30s.
+HOL Packet Delay,4,2810500000,34
+HOL Packet Delay,4,2815000000,34
+HOL Packet Delay,4,2819500000,32
+Simulation Time: +2.82001s real time: 22h, 5m, 31s.
+HOL Packet Delay,4,2825000000,32
+Simulation Time: +2.83001s real time: 22h, 5m, 31s.
+HOL Packet Delay,4,2839000000,40
+Simulation Time: +2.84001s real time: 22h, 5m, 32s.
+HOL Packet Delay,4,2843000000,37
+HOL Packet Delay,4,2847000000,34
+Simulation Time: +2.85001s real time: 22h, 5m, 32s.
+Simulation Time: +2.86001s real time: 22h, 5m, 33s.
+Simulation Time: +2.87001s real time: 22h, 5m, 34s.
+HOL Packet Delay,4,2876500000,56
+Simulation Time: +2.88001s real time: 22h, 5m, 35s.
+HOL Packet Delay,4,2889500000,64
+Simulation Time: +2.89001s real time: 22h, 5m, 36s.
+HOL Packet Delay,4,2892500000,61
+HOL Packet Delay,4,2899000000,61
+Simulation Time: +2.90001s real time: 22h, 5m, 37s.
+HOL Packet Delay,4,2901500000,58
+HOL Packet Delay,4,2905000000,53
+HOL Packet Delay,4,2906000000,53
+HOL Packet Delay,4,2909000000,45
+Simulation Time: +2.91001s real time: 22h, 5m, 37s.
+HOL Packet Delay,4,2913000000,42
+HOL Packet Delay,4,2914000000,42
+HOL Packet Delay,4,2920000000,37
+Simulation Time: +2.92001s real time: 22h, 5m, 38s.
+HOL Packet Delay,4,2925500000,37
+HOL Packet Delay,4,2926500000,37
+Simulation Time: +2.93001s real time: 22h, 5m, 38s.
+HOL Packet Delay,4,2931500000,32
+HOL Packet Delay,4,2937500000,32
+HOL Packet Delay,4,2938500000,32
+Simulation Time: +2.94001s real time: 22h, 5m, 39s.
+HOL Packet Delay,4,2942500000,24
+HOL Packet Delay,4,2949000000,24
+Simulation Time: +2.95001s real time: 22h, 5m, 40s.
+HOL Packet Delay,4,2955500000,24
+HOL Packet Delay,4,2959000000,21
+Simulation Time: +2.96001s real time: 22h, 5m, 41s.
+HOL Packet Delay,4,2962000000,16
+Simulation Time: +2.97001s real time: 22h, 5m, 42s.
+Simulation Time: +2.98001s real time: 22h, 5m, 43s.
+Simulation Time: +2.99001s real time: 22h, 5m, 43s.
+Simulation Time: +3.00001s real time: 22h, 5m, 44s.
+HOL Packet Delay,4,3006000000,56
+Simulation Time: +3.01001s real time: 22h, 5m, 44s.
+HOL Packet Delay,4,3012500000,56
+HOL Packet Delay,4,3018000000,53
+Simulation Time: +3.02001s real time: 22h, 5m, 45s.
+HOL Packet Delay,4,3024500000,56
+HOL Packet Delay,4,3027500000,50
+Simulation Time: +3.03001s real time: 22h, 5m, 46s.
+HOL Packet Delay,4,3032000000,48
+HOL Packet Delay,4,3036000000,48
+HOL Packet Delay,4,3039000000,42
+Simulation Time: +3.04001s real time: 22h, 5m, 47s.
+HOL Packet Delay,4,3042000000,40
+HOL Packet Delay,4,3044500000,34
+HOL Packet Delay,4,3047000000,32
+HOL Packet Delay,4,3048000000,32
+Simulation Time: +3.05001s real time: 22h, 5m, 48s.
+HOL Packet Delay,4,3050500000,21
+HOL Packet Delay,4,3054500000,21
+HOL Packet Delay,4,3057500000,18
+Simulation Time: +3.06001s real time: 22h, 5m, 48s.
+Simulation Time: +3.07001s real time: 22h, 5m, 49s.
+HOL Packet Delay,4,3077500000,32
+Simulation Time: +3.08001s real time: 22h, 5m, 50s.
+HOL Packet Delay,4,3081500000,29
+HOL Packet Delay,4,3085000000,24
+HOL Packet Delay,4,3089500000,24
+Simulation Time: +3.09001s real time: 22h, 5m, 50s.
+HOL Packet Delay,4,3092000000,21
+HOL Packet Delay,4,3098500000,18
+Simulation Time: +3.10001s real time: 22h, 5m, 51s.
+Simulation Time: +3.11001s real time: 22h, 5m, 52s.
+Simulation Time: +3.12001s real time: 22h, 5m, 52s.
+HOL Packet Delay,4,3126000000,42
+HOL Packet Delay,4,3129500000,40
+Simulation Time: +3.13001s real time: 22h, 5m, 53s.
+HOL Packet Delay,4,3132000000,34
+HOL Packet Delay,4,3133000000,34
+Simulation Time: +3.14001s real time: 22h, 5m, 54s.
+Simulation Time: +3.15001s real time: 22h, 5m, 55s.
+HOL Packet Delay,4,3157500000,50
+Simulation Time: +3.16001s real time: 22h, 5m, 55s.
+HOL Packet Delay,4,3162500000,45
+HOL Packet Delay,4,3167000000,45
+Simulation Time: +3.17001s real time: 22h, 5m, 56s.
+HOL Packet Delay,4,3172000000,42
+HOL Packet Delay,4,3173000000,42
+HOL Packet Delay,4,3178500000,37
+Simulation Time: +3.18001s real time: 22h, 5m, 57s.
+Simulation Time: +3.19001s real time: 22h, 5m, 57s.
+HOL Packet Delay,4,3191500000,42
+HOL Packet Delay,4,3195000000,42
+HOL Packet Delay,4,3198500000,40
+Simulation Time: +3.20001s real time: 22h, 5m, 58s.
+HOL Packet Delay,4,3203000000,37
+HOL Packet Delay,4,3204000000,37
+HOL Packet Delay,4,3206500000,29
+Simulation Time: +3.21001s real time: 22h, 5m, 59s.
+HOL Packet Delay,4,3210500000,24
+HOL Packet Delay,4,3216000000,24
+Simulation Time: +3.22001s real time: 22h, 6m, 0s.
+HOL Packet Delay,4,3220500000,21
+HOL Packet Delay,4,3224000000,18
+HOL Packet Delay,4,3226500000,16
+HOL Packet Delay,4,3229500000,13
+Simulation Time: +3.23001s real time: 22h, 6m, 1s.
+HOL Packet Delay,4,3234000000,10
+HOL Packet Delay,4,3237500000,8
+HOL Packet Delay,4,3240000000,8
+Simulation Time: +3.24001s real time: 22h, 6m, 2s.
+HOL Packet Delay,4,3243000000,2
+Simulation Time: +3.25001s real time: 22h, 6m, 2s.
+Simulation Time: +3.26001s real time: 22h, 6m, 3s.
+HOL Packet Delay,4,3265000000,18
+HOL Packet Delay,4,3269500000,18
+Simulation Time: +3.27001s real time: 22h, 6m, 3s.
+HOL Packet Delay,4,3273500000,16
+Simulation Time: +3.28001s real time: 22h, 6m, 4s.
+HOL Packet Delay,4,3283000000,18
+HOL Packet Delay,4,3286000000,16
+HOL Packet Delay,4,3288500000,13
+Simulation Time: +3.29001s real time: 22h, 6m, 6s.
+HOL Packet Delay,4,3292000000,8
+HOL Packet Delay,4,3294500000,5
+Simulation Time: +3.30001s real time: 22h, 6m, 6s.
+HOL Packet Delay,4,3310000000,13
+Simulation Time: +3.31001s real time: 22h, 6m, 7s.
+Simulation Time: +3.32001s real time: 22h, 6m, 8s.
+HOL Packet Delay,4,3324000000,21
+Simulation Time: +3.33001s real time: 22h, 6m, 8s.
+HOL Packet Delay,4,3334000000,26
+HOL Packet Delay,4,3337000000,21
+Simulation Time: +3.34001s real time: 22h, 6m, 9s.
+Simulation Time: +3.35001s real time: 22h, 6m, 10s.
+Simulation Time: +3.36001s real time: 22h, 6m, 11s.
+HOL Packet Delay,4,3369000000,48
+Simulation Time: +3.37001s real time: 22h, 6m, 12s.
+HOL Packet Delay,4,3375000000,48
+HOL Packet Delay,4,3380000000,45
+Simulation Time: +3.38001s real time: 22h, 6m, 13s.
+HOL Packet Delay,4,3381000000,45
+HOL Packet Delay,4,3383500000,37
+HOL Packet Delay,4,3390000000,37
+Simulation Time: +3.39001s real time: 22h, 6m, 13s.
+HOL Packet Delay,4,3393500000,34
+Simulation Time: +3.40001s real time: 22h, 6m, 14s.
+HOL Packet Delay,4,3400500000,34
+HOL Packet Delay,4,3401500000,34
+HOL Packet Delay,4,3404000000,26
+HOL Packet Delay,4,3406500000,21
+Simulation Time: +3.41001s real time: 22h, 6m, 15s.
+HOL Packet Delay,4,3410500000,18
+HOL Packet Delay,4,3411500000,16
+HOL Packet Delay,4,3414500000,10
+HOL Packet Delay,4,3419000000,10
+Simulation Time: +3.42001s real time: 22h, 6m, 15s.
+HOL Packet Delay,4,3429500000,16
+Simulation Time: +3.43001s real time: 22h, 6m, 16s.
+HOL Packet Delay,4,3434500000,10
+HOL Packet Delay,4,3437000000,8
+HOL Packet Delay,4,3440000000,2
+Simulation Time: +3.44001s real time: 22h, 6m, 17s.
+HOL Packet Delay,4,3442500000,0
+HOL Packet Delay,4,3443500000,0
+HOL Packet Delay,4,3446000000,0
+Simulation Time: +3.45001s real time: 22h, 6m, 19s.
+HOL Packet Delay,4,3455500000,5
+HOL Packet Delay,4,3457500000,2
+Simulation Time: +3.46001s real time: 22h, 6m, 19s.
+Simulation Time: +3.47001s real time: 22h, 6m, 20s.
+Simulation Time: +3.48001s real time: 22h, 6m, 21s.
+HOL Packet Delay,4,3486000000,26
+Simulation Time: +3.49001s real time: 22h, 6m, 21s.
+HOL Packet Delay,4,3491000000,26
+HOL Packet Delay,4,3500000000,29
+Simulation Time: +3.50001s real time: 22h, 6m, 22s.
+HOL Packet Delay,4,3509500000,32
+Simulation Time: +3.51001s real time: 22h, 6m, 23s.
+HOL Packet Delay,4,3516500000,32
+Simulation Time: +3.52001s real time: 22h, 6m, 24s.
+HOL Packet Delay,4,3523500000,34
+HOL Packet Delay,4,3529500000,32
+Simulation Time: +3.53001s real time: 22h, 6m, 25s.
+HOL Packet Delay,4,3532000000,29
+HOL Packet Delay,4,3534500000,24
+HOL Packet Delay,4,3538000000,21
+Simulation Time: +3.54001s real time: 22h, 6m, 26s.
+HOL Packet Delay,4,3543500000,21
+HOL Packet Delay,4,3546500000,16
+Simulation Time: +3.55001s real time: 22h, 6m, 27s.
+Simulation Time: +3.56001s real time: 22h, 6m, 28s.
+HOL Packet Delay,4,3562000000,26
+Simulation Time: +3.57001s real time: 22h, 6m, 29s.
+Simulation Time: +3.58001s real time: 22h, 6m, 29s.
+HOL Packet Delay,4,3581000000,37
+Simulation Time: +3.59001s real time: 22h, 6m, 30s.
+HOL Packet Delay,4,3596000000,48
+Simulation Time: +3.60001s real time: 22h, 6m, 31s.
+HOL Packet Delay,4,3600500000,48
+HOL Packet Delay,4,3603000000,42
+Simulation Time: +3.61001s real time: 22h, 6m, 32s.
+Simulation Time: +3.62001s real time: 22h, 6m, 33s.
+Simulation Time: +3.63001s real time: 22h, 6m, 34s.
+Simulation Time: +3.64001s real time: 22h, 6m, 35s.
+HOL Packet Delay,4,3643500000,77
+HOL Packet Delay,4,3647000000,72
+Simulation Time: +3.65001s real time: 22h, 6m, 36s.
+HOL Packet Delay,4,3650500000,69
+Simulation Time: +3.66001s real time: 22h, 6m, 37s.
+Simulation Time: +3.67001s real time: 22h, 6m, 38s.
+HOL Packet Delay,4,3675000000,90
+HOL Packet Delay,4,3677500000,85
+Simulation Time: +3.68001s real time: 22h, 6m, 38s.
+HOL Packet Delay,4,3680500000,82
+HOL Packet Delay,4,3681500000,82
+HOL Packet Delay,4,3685000000,72
+Simulation Time: +3.69001s real time: 22h, 6m, 39s.
+HOL Packet Delay,4,3693500000,77
+HOL Packet Delay,4,3694500000,77
+HOL Packet Delay,4,3699000000,69
+Simulation Time: +3.70001s real time: 22h, 6m, 40s.
+HOL Packet Delay,4,3702500000,66
+HOL Packet Delay,4,3705000000,61
+HOL Packet Delay,4,3708000000,58
+Simulation Time: +3.71001s real time: 22h, 6m, 41s.
+HOL Packet Delay,4,3712000000,56
+HOL Packet Delay,4,3715000000,53
+HOL Packet Delay,4,3717500000,50
+HOL Packet Delay,4,3718500000,50
+Simulation Time: +3.72001s real time: 22h, 6m, 43s.
+HOL Packet Delay,4,3721000000,40
+HOL Packet Delay,4,3723500000,37
+HOL Packet Delay,4,3727000000,34
+Simulation Time: +3.73001s real time: 22h, 6m, 43s.
+HOL Packet Delay,4,3735000000,34
+HOL Packet Delay,4,3738500000,32
+Simulation Time: +3.74001s real time: 22h, 6m, 44s.
+HOL Packet Delay,4,3742000000,29
+HOL Packet Delay,4,3745500000,26
+Simulation Time: +3.75001s real time: 22h, 6m, 45s.
+HOL Packet Delay,4,3752500000,29
+HOL Packet Delay,4,3756000000,24
+HOL Packet Delay,4,3759000000,21
+Simulation Time: +3.76001s real time: 22h, 6m, 46s.
+HOL Packet Delay,4,3761500000,16
+Simulation Time: +3.77001s real time: 22h, 6m, 47s.
+HOL Packet Delay,4,3774500000,24
+HOL Packet Delay,4,3777000000,21
+HOL Packet Delay,4,3780000000,16
+Simulation Time: +3.78001s real time: 22h, 6m, 48s.
+HOL Packet Delay,4,3785000000,16
+HOL Packet Delay,4,3786000000,16
+Simulation Time: +3.79001s real time: 22h, 6m, 49s.
+HOL Packet Delay,4,3793000000,10
+HOL Packet Delay,4,3794000000,10
+HOL Packet Delay,4,3797000000,2
+Simulation Time: +3.80001s real time: 22h, 6m, 50s.
+HOL Packet Delay,4,3800500000,2
+HOL Packet Delay,4,3807500000,2
+Simulation Time: +3.81001s real time: 22h, 6m, 51s.
+HOL Packet Delay,4,3813500000,5
+HOL Packet Delay,4,3815000000,5
+HOL Packet Delay,4,3820000000,2
+Simulation Time: +3.82001s real time: 22h, 6m, 52s.
+HOL Packet Delay,4,3822500000,0
+Simulation Time: +3.83001s real time: 22h, 6m, 53s.
+HOL Packet Delay,4,3832000000,5
+HOL Packet Delay,4,3834500000,2
+HOL Packet Delay,4,3837000000,0
+Simulation Time: +3.84001s real time: 22h, 6m, 54s.
+HOL Packet Delay,4,3846000000,8
+Simulation Time: +3.85001s real time: 22h, 6m, 55s.
+HOL Packet Delay,4,3851000000,8
+HOL Packet Delay,4,3856000000,5
+HOL Packet Delay,4,3857000000,0
+Simulation Time: +3.86001s real time: 22h, 6m, 56s.
+Simulation Time: +3.87001s real time: 22h, 6m, 57s.
+Simulation Time: +3.88001s real time: 22h, 6m, 58s.
+Simulation Time: +3.89001s real time: 22h, 6m, 59s.
+HOL Packet Delay,4,3891500000,32
+Simulation Time: +3.90001s real time: 22h, 7m, 0s.
+Simulation Time: +3.91001s real time: 22h, 7m, 1s.
+Simulation Time: +3.92001s real time: 22h, 7m, 1s.
+HOL Packet Delay,4,3927000000,61
+HOL Packet Delay,4,3930000000,58
+Simulation Time: +3.93001s real time: 22h, 7m, 2s.
+HOL Packet Delay,4,3932500000,53
+HOL Packet Delay,4,3935000000,50
+Simulation Time: +3.94001s real time: 22h, 7m, 3s.
+HOL Packet Delay,4,3940500000,50
+HOL Packet Delay,4,3944500000,48
+HOL Packet Delay,4,3949500000,48
+Simulation Time: +3.95001s real time: 22h, 7m, 4s.
+HOL Packet Delay,4,3953000000,42
+HOL Packet Delay,4,3959500000,42
+Simulation Time: +3.96001s real time: 22h, 7m, 5s.
+HOL Packet Delay,4,3963000000,42
+HOL Packet Delay,4,3967500000,37
+Simulation Time: +3.97001s real time: 22h, 7m, 6s.
+HOL Packet Delay,4,3972500000,37
+HOL Packet Delay,4,3978000000,34
+Simulation Time: +3.98001s real time: 22h, 7m, 7s.
+HOL Packet Delay,4,3984500000,37
+Simulation Time: +3.99001s real time: 22h, 7m, 8s.
+HOL Packet Delay,4,3993500000,40
+HOL Packet Delay,4,3997000000,34
+HOL Packet Delay,4,4000000000,32
+Simulation Time: +4.00001s real time: 22h, 7m, 9s.
+HOL Packet Delay,4,4003500000,29
+HOL Packet Delay,4,4007500000,26
+Simulation Time: +4.01001s real time: 22h, 7m, 10s.
+HOL Packet Delay,4,4015000000,29
+Simulation Time: +4.02001s real time: 22h, 7m, 11s.
+HOL Packet Delay,4,4024500000,32
+Simulation Time: +4.03001s real time: 22h, 7m, 12s.
+HOL Packet Delay,4,4030500000,32
+HOL Packet Delay,4,4033500000,26
+HOL Packet Delay,4,4036000000,24
+Simulation Time: +4.04001s real time: 22h, 7m, 13s.
+Simulation Time: +4.05001s real time: 22h, 7m, 14s.
+Simulation Time: +4.06001s real time: 22h, 7m, 15s.
+Simulation Time: +4.07001s real time: 22h, 7m, 16s.
+HOL Packet Delay,4,4076000000,58
+Simulation Time: +4.08001s real time: 22h, 7m, 17s.
+HOL Packet Delay,4,4082500000,56
+HOL Packet Delay,4,4085000000,53
+Simulation Time: +4.09001s real time: 22h, 7m, 18s.
+Simulation Time: +4.10001s real time: 22h, 7m, 19s.
+HOL Packet Delay,4,4106000000,66
+Simulation Time: +4.11001s real time: 22h, 7m, 21s.
+HOL Packet Delay,4,4111000000,66
+HOL Packet Delay,4,4114000000,64
+HOL Packet Delay,4,4118000000,61
+HOL Packet Delay,4,4119000000,61
+Simulation Time: +4.12001s real time: 22h, 7m, 22s.
+HOL Packet Delay,4,4124000000,56
+Simulation Time: +4.13001s real time: 22h, 7m, 24s.
+HOL Packet Delay,4,4139000000,64
+Simulation Time: +4.14001s real time: 22h, 7m, 25s.
+HOL Packet Delay,4,4143000000,61
+Simulation Time: +4.15001s real time: 22h, 7m, 26s.
+Simulation Time: +4.16001s real time: 22h, 7m, 26s.
+HOL Packet Delay,4,4160500000,74
+HOL Packet Delay,4,4167000000,72
+Simulation Time: +4.17001s real time: 22h, 7m, 27s.
+HOL Packet Delay,4,4172000000,72
+HOL Packet Delay,4,4175500000,66
+HOL Packet Delay,4,4178500000,64
+Simulation Time: +4.18001s real time: 22h, 7m, 28s.
+HOL Packet Delay,4,4186000000,66
+Simulation Time: +4.19001s real time: 22h, 7m, 30s.
+HOL Packet Delay,4,4194000000,66
+Simulation Time: +4.20001s real time: 22h, 7m, 31s.
+HOL Packet Delay,4,4201500000,69
+HOL Packet Delay,4,4209000000,69
+Simulation Time: +4.21001s real time: 22h, 7m, 32s.
+Simulation Time: +4.22001s real time: 22h, 7m, 32s.
+Simulation Time: +4.23001s real time: 22h, 7m, 33s.
+HOL Packet Delay,4,4231000000,85
+HOL Packet Delay,4,4234500000,82
+HOL Packet Delay,4,4237500000,80
+HOL Packet Delay,4,4238500000,80
+Simulation Time: +4.24001s real time: 22h, 7m, 35s.
+HOL Packet Delay,4,4241000000,72
+HOL Packet Delay,4,4245000000,66
+Simulation Time: +4.25001s real time: 22h, 7m, 36s.
+HOL Packet Delay,4,4250500000,66
+HOL Packet Delay,4,4254000000,64
+Simulation Time: +4.26001s real time: 22h, 7m, 37s.
+HOL Packet Delay,4,4260500000,64
+HOL Packet Delay,4,4265000000,64
+HOL Packet Delay,4,4267500000,58
+Simulation Time: +4.27001s real time: 22h, 7m, 38s.
+HOL Packet Delay,4,4270500000,56
+HOL Packet Delay,4,4273000000,50
+HOL Packet Delay,4,4278500000,50
+Simulation Time: +4.28001s real time: 22h, 7m, 39s.
+HOL Packet Delay,4,4281500000,48
+HOL Packet Delay,4,4285500000,45
+HOL Packet Delay,4,4289000000,42
+HOL Packet Delay,4,4290000000,42
+Simulation Time: +4.29001s real time: 22h, 7m, 40s.
+HOL Packet Delay,4,4294500000,34
+HOL Packet Delay,4,4295500000,34
+Simulation Time: +4.30001s real time: 22h, 7m, 41s.
+HOL Packet Delay,4,4300500000,29
+HOL Packet Delay,4,4304000000,24
+HOL Packet Delay,4,4310000000,26
+Simulation Time: +4.31001s real time: 22h, 7m, 42s.
+HOL Packet Delay,4,4315500000,26
+HOL Packet Delay,4,4318500000,21
+Simulation Time: +4.32001s real time: 22h, 7m, 43s.
+HOL Packet Delay,4,4321000000,18
+HOL Packet Delay,4,4323500000,13
+HOL Packet Delay,4,4324500000,13
+Simulation Time: +4.33001s real time: 22h, 7m, 44s.
+HOL Packet Delay,4,4332000000,10
+Simulation Time: +4.34001s real time: 22h, 7m, 45s.
+Simulation Time: +4.35001s real time: 22h, 7m, 46s.
+HOL Packet Delay,4,4351500000,21
+HOL Packet Delay,4,4354500000,18
+Simulation Time: +4.36001s real time: 22h, 7m, 47s.
+HOL Packet Delay,4,4366000000,26
+Simulation Time: +4.37001s real time: 22h, 7m, 49s.
+HOL Packet Delay,4,4374500000,26
+HOL Packet Delay,4,4379500000,26
+Simulation Time: +4.38001s real time: 22h, 7m, 49s.
+HOL Packet Delay,4,4382000000,21
+HOL Packet Delay,4,4385000000,18
+HOL Packet Delay,4,4386000000,18
+HOL Packet Delay,4,4389000000,8
+Simulation Time: +4.39001s real time: 22h, 7m, 50s.
+HOL Packet Delay,4,4392000000,5
+HOL Packet Delay,4,4395500000,5
+Simulation Time: +4.40001s real time: 22h, 7m, 51s.
+HOL Packet Delay,4,4408500000,10
+Simulation Time: +4.41001s real time: 22h, 7m, 52s.
+HOL Packet Delay,4,4420000000,16
+Simulation Time: +4.42001s real time: 22h, 7m, 54s.
+Simulation Time: +4.43001s real time: 22h, 7m, 55s.
+HOL Packet Delay,4,4439500000,29
+Simulation Time: +4.44001s real time: 22h, 7m, 56s.
+HOL Packet Delay,4,4448000000,29
+Simulation Time: +4.45001s real time: 22h, 7m, 57s.
+HOL Packet Delay,4,4451000000,29
+HOL Packet Delay,4,4453500000,26
+HOL Packet Delay,4,4460000000,24
+Simulation Time: +4.46001s real time: 22h, 7m, 57s.
+HOL Packet Delay,4,4463000000,21
+HOL Packet Delay,4,4465500000,16
+HOL Packet Delay,4,4468500000,13
+Simulation Time: +4.47001s real time: 22h, 7m, 59s.
+HOL Packet Delay,4,4471000000,10
+HOL Packet Delay,4,4476000000,8
+HOL Packet Delay,4,4477000000,8
+Simulation Time: +4.48001s real time: 22h, 8m, 0s.
+HOL Packet Delay,4,4486500000,8
+Simulation Time: +4.49001s real time: 22h, 8m, 1s.
+HOL Packet Delay,4,4492500000,8
+HOL Packet Delay,4,4499000000,10
+Simulation Time: +4.50001s real time: 22h, 8m, 2s.
+HOL Packet Delay,4,4508500000,10
+Simulation Time: +4.51001s real time: 22h, 8m, 3s.
+HOL Packet Delay,4,4514000000,10
+Simulation Time: +4.52001s real time: 22h, 8m, 4s.
+HOL Packet Delay,4,4524000000,16
+HOL Packet Delay,4,4526500000,10
+Simulation Time: +4.53001s real time: 22h, 8m, 6s.
+HOL Packet Delay,4,4530500000,8
+HOL Packet Delay,4,4538000000,8
+Simulation Time: +4.54001s real time: 22h, 8m, 7s.
+Simulation Time: +4.55001s real time: 22h, 8m, 8s.
+HOL Packet Delay,4,4553500000,18
+HOL Packet Delay,4,4559500000,18
+Simulation Time: +4.56001s real time: 22h, 8m, 9s.
+HOL Packet Delay,4,4565500000,18
+HOL Packet Delay,4,4570000000,16
+Simulation Time: +4.57001s real time: 22h, 8m, 10s.
+HOL Packet Delay,4,4573500000,13
+HOL Packet Delay,4,4574500000,13
+HOL Packet Delay,4,4578000000,5
+Simulation Time: +4.58001s real time: 22h, 8m, 11s.
+HOL Packet Delay,4,4581000000,0
+HOL Packet Delay,4,4583500000,0
+HOL Packet Delay,4,4587000000,2
+Simulation Time: +4.59001s real time: 22h, 8m, 13s.
+Simulation Time: +4.60001s real time: 22h, 8m, 13s.
+HOL Packet Delay,4,4608000000,16
+Simulation Time: +4.61001s real time: 22h, 8m, 15s.
+HOL Packet Delay,4,4611500000,16
+Simulation Time: +4.62001s real time: 22h, 8m, 16s.
+HOL Packet Delay,4,4621000000,18
+HOL Packet Delay,4,4629500000,21
+Simulation Time: +4.63001s real time: 22h, 8m, 17s.
+HOL Packet Delay,4,4630500000,21
+Simulation Time: +4.64001s real time: 22h, 8m, 18s.
+HOL Packet Delay,4,4642500000,21
+HOL Packet Delay,4,4647000000,18
+Simulation Time: +4.65001s real time: 22h, 8m, 19s.
+HOL Packet Delay,4,4650500000,16
+HOL Packet Delay,4,4654000000,16
+HOL Packet Delay,4,4660000000,13
+Simulation Time: +4.66001s real time: 22h, 8m, 20s.
+HOL Packet Delay,4,4662500000,10
+Simulation Time: +4.67001s real time: 22h, 8m, 22s.
+HOL Packet Delay,4,4675500000,16
+Simulation Time: +4.68001s real time: 22h, 8m, 23s.
+HOL Packet Delay,4,4680500000,16
+Simulation Time: +4.69001s real time: 22h, 8m, 24s.
+HOL Packet Delay,4,4699500000,29
+Simulation Time: +4.70001s real time: 22h, 8m, 25s.
+Simulation Time: +4.71001s real time: 22h, 8m, 26s.
+HOL Packet Delay,4,4713000000,34
+Simulation Time: +4.72001s real time: 22h, 8m, 27s.
+Simulation Time: +4.73001s real time: 22h, 8m, 28s.
+HOL Packet Delay,4,4737000000,53
+HOL Packet Delay,4,4740000000,48
+Simulation Time: +4.74001s real time: 22h, 8m, 29s.
+HOL Packet Delay,4,4744000000,45
+Simulation Time: +4.75001s real time: 22h, 8m, 30s.
+HOL Packet Delay,4,4751500000,48
+Simulation Time: +4.76001s real time: 22h, 8m, 31s.
+HOL Packet Delay,4,4764000000,53
+HOL Packet Delay,4,4769000000,53
+Simulation Time: +4.77001s real time: 22h, 8m, 33s.
+HOL Packet Delay,4,4772000000,48
+HOL Packet Delay,4,4777000000,48
+HOL Packet Delay,4,4780000000,45
+Simulation Time: +4.78001s real time: 22h, 8m, 34s.
+HOL Packet Delay,4,4786500000,42
+HOL Packet Delay,4,4787500000,40
+Simulation Time: +4.79001s real time: 22h, 8m, 35s.
+HOL Packet Delay,4,4790500000,37
+HOL Packet Delay,4,4793500000,32
+Simulation Time: +4.80001s real time: 22h, 8m, 36s.
+Simulation Time: +4.81001s real time: 22h, 8m, 37s.
+Simulation Time: +4.82001s real time: 22h, 8m, 38s.
+HOL Packet Delay,4,4821000000,53
+HOL Packet Delay,4,4825000000,50
+HOL Packet Delay,4,4827500000,48
+Simulation Time: +4.83001s real time: 22h, 8m, 39s.
+HOL Packet Delay,4,4831000000,45
+HOL Packet Delay,4,4836500000,42
+HOL Packet Delay,4,4839500000,40
+Simulation Time: +4.84001s real time: 22h, 8m, 41s.
+HOL Packet Delay,4,4843000000,40
+HOL Packet Delay,4,4849500000,37
+Simulation Time: +4.85001s real time: 22h, 8m, 42s.
+HOL Packet Delay,4,4852500000,34
+HOL Packet Delay,4,4858000000,32
+Simulation Time: +4.86001s real time: 22h, 8m, 43s.
+HOL Packet Delay,4,4864000000,32
+HOL Packet Delay,4,4868000000,32
+Simulation Time: +4.87001s real time: 22h, 8m, 44s.
+HOL Packet Delay,4,4871500000,26
+HOL Packet Delay,4,4874000000,24
+HOL Packet Delay,4,4880000000,21
+Simulation Time: +4.88001s real time: 22h, 8m, 46s.
+HOL Packet Delay,4,4882500000,18
+HOL Packet Delay,4,4886000000,18
+HOL Packet Delay,4,4888500000,13
+Simulation Time: +4.89001s real time: 22h, 8m, 47s.
+HOL Packet Delay,4,4893000000,10
+Simulation Time: +4.90001s real time: 22h, 8m, 48s.
+HOL Packet Delay,4,4900500000,10
+HOL Packet Delay,4,4901500000,8
+HOL Packet Delay,4,4905500000,5
+Simulation Time: +4.91001s real time: 22h, 8m, 50s.
+HOL Packet Delay,4,4912000000,2
+HOL Packet Delay,4,4914000000,0
+Simulation Time: +4.92001s real time: 22h, 8m, 51s.
+HOL Packet Delay,4,4929500000,13
+Simulation Time: +4.93001s real time: 22h, 8m, 52s.
+HOL Packet Delay,4,4936500000,16
+Simulation Time: +4.94001s real time: 22h, 8m, 53s.
+Simulation Time: +4.95001s real time: 22h, 8m, 54s.
+Simulation Time: +4.96001s real time: 22h, 8m, 56s.
+Simulation Time: +4.97001s real time: 22h, 8m, 57s.
+HOL Packet Delay,4,4972000000,45
+HOL Packet Delay,4,4976000000,40
+HOL Packet Delay,4,4977000000,37
+Simulation Time: +4.98001s real time: 22h, 8m, 58s.
+HOL Packet Delay,4,4981000000,34
+HOL Packet Delay,4,4987000000,34
+Simulation Time: +4.99001s real time: 22h, 8m, 59s.
+HOL Packet Delay,4,5000000000,40
+Simulation Time: +5.00001s real time: 22h, 9m, 0s.
+HOL Packet Delay,4,5003500000,40
+HOL Packet Delay,4,5006000000,34
+Simulation Time: +5.01001s real time: 22h, 9m, 2s.
+Simulation Time: +5.02001s real time: 22h, 9m, 3s.
+Simulation Time: +5.03001s real time: 22h, 9m, 4s.
+HOL Packet Delay,4,5038500000,61
+Simulation Time: +5.04001s real time: 22h, 9m, 5s.
+HOL Packet Delay,4,5046500000,61
+HOL Packet Delay,4,5049000000,58
+Simulation Time: +5.05001s real time: 22h, 9m, 6s.
+HOL Packet Delay,4,5052500000,56
+HOL Packet Delay,4,5055000000,50
+HOL Packet Delay,4,5056000000,50
+Simulation Time: +5.06001s real time: 22h, 9m, 7s.
+HOL Packet Delay,4,5061000000,45
+HOL Packet Delay,4,5064000000,40
+HOL Packet Delay,4,5066500000,37
+Simulation Time: +5.07001s real time: 22h, 9m, 9s.
+HOL Packet Delay,4,5074500000,37
+Simulation Time: +5.08001s real time: 22h, 9m, 10s.
+HOL Packet Delay,4,5083000000,42
+HOL Packet Delay,4,5090000000,42
+Simulation Time: +5.09001s real time: 22h, 9m, 11s.
+HOL Packet Delay,4,5098500000,42
+Simulation Time: +5.10001s real time: 22h, 9m, 12s.
+Simulation Time: +5.11001s real time: 22h, 9m, 13s.
+HOL Packet Delay,4,5110500000,50
+Simulation Time: +5.12001s real time: 22h, 9m, 15s.
+HOL Packet Delay,4,5126000000,58
+Simulation Time: +5.13001s real time: 22h, 9m, 16s.
+HOL Packet Delay,4,5132000000,58
+HOL Packet Delay,4,5137000000,58
+HOL Packet Delay,4,5139500000,53
+Simulation Time: +5.14001s real time: 22h, 9m, 17s.
+HOL Packet Delay,4,5142000000,50
+HOL Packet Delay,4,5148500000,48
+Simulation Time: +5.15001s real time: 22h, 9m, 19s.
+Simulation Time: +5.16001s real time: 22h, 9m, 20s.
+Simulation Time: +5.17001s real time: 22h, 9m, 22s.
+HOL Packet Delay,4,5179000000,74
+Simulation Time: +5.18001s real time: 22h, 9m, 23s.
+HOL Packet Delay,4,5184000000,72
+HOL Packet Delay,4,5190000000,72
+Simulation Time: +5.19001s real time: 22h, 9m, 24s.
+HOL Packet Delay,4,5195500000,72
+HOL Packet Delay,4,5198500000,69
+Simulation Time: +5.20001s real time: 22h, 9m, 25s.
+HOL Packet Delay,4,5202500000,64
+HOL Packet Delay,4,5206000000,64
+HOL Packet Delay,4,5209000000,58
+Simulation Time: +5.21001s real time: 22h, 9m, 27s.
+Simulation Time: +5.22001s real time: 22h, 9m, 28s.
+HOL Packet Delay,4,5229000000,72
+Simulation Time: +5.23001s real time: 22h, 9m, 29s.
+HOL Packet Delay,4,5233500000,72
+Simulation Time: +5.24001s real time: 22h, 9m, 30s.
+HOL Packet Delay,4,5245000000,74
+HOL Packet Delay,4,5248000000,72
+HOL Packet Delay,4,5249000000,66
+Simulation Time: +5.25001s real time: 22h, 9m, 31s.
+HOL Packet Delay,4,5253500000,66
+Simulation Time: +5.26001s real time: 22h, 9m, 32s.
+HOL Packet Delay,4,5263000000,69
+HOL Packet Delay,4,5266500000,64
+HOL Packet Delay,4,5269000000,61
+Simulation Time: +5.27001s real time: 22h, 9m, 34s.
+HOL Packet Delay,4,5272000000,58
+HOL Packet Delay,4,5277500000,58
+Simulation Time: +5.28001s real time: 22h, 9m, 35s.
+HOL Packet Delay,4,5281500000,56
+HOL Packet Delay,4,5285500000,53
+Simulation Time: +5.29001s real time: 22h, 9m, 36s.
+HOL Packet Delay,4,5290500000,50
+HOL Packet Delay,4,5293000000,48
+HOL Packet Delay,4,5297500000,45
+Simulation Time: +5.30001s real time: 22h, 9m, 38s.
+HOL Packet Delay,4,5302000000,45
+HOL Packet Delay,4,5304500000,40
+HOL Packet Delay,4,5309500000,40
+Simulation Time: +5.31001s real time: 22h, 9m, 39s.
+Simulation Time: +5.32001s real time: 22h, 9m, 41s.
+HOL Packet Delay,4,5321500000,45
+HOL Packet Delay,4,5328000000,42
+Simulation Time: +5.33001s real time: 22h, 9m, 42s.
+HOL Packet Delay,4,5337500000,48
+Simulation Time: +5.34001s real time: 22h, 9m, 43s.
+HOL Packet Delay,4,5342000000,48
+HOL Packet Delay,4,5346000000,42
+Simulation Time: +5.35001s real time: 22h, 9m, 45s.
+Simulation Time: +5.36001s real time: 22h, 9m, 46s.
+HOL Packet Delay,4,5365000000,56
+HOL Packet Delay,4,5368000000,50
+Simulation Time: +5.37001s real time: 22h, 9m, 48s.
+Simulation Time: +5.38001s real time: 22h, 9m, 49s.
+HOL Packet Delay,4,5384000000,61
+Simulation Time: +5.39001s real time: 22h, 9m, 50s.
+HOL Packet Delay,4,5395000000,69
+HOL Packet Delay,4,5396000000,69
+HOL Packet Delay,4,5399000000,58
+Simulation Time: +5.40001s real time: 22h, 9m, 52s.
+HOL Packet Delay,4,5402000000,56
+HOL Packet Delay,4,5403000000,50
+HOL Packet Delay,4,5406500000,48
+Simulation Time: +5.41001s real time: 22h, 9m, 53s.
+HOL Packet Delay,4,5410500000,45
+HOL Packet Delay,4,5414000000,42
+HOL Packet Delay,4,5415000000,42
+HOL Packet Delay,4,5417500000,34
+HOL Packet Delay,4,5418500000,34
+Simulation Time: +5.42001s real time: 22h, 9m, 55s.
+HOL Packet Delay,4,5423000000,26
+HOL Packet Delay,4,5427000000,26
+Simulation Time: +5.43001s real time: 22h, 9m, 56s.
+HOL Packet Delay,4,5435000000,26
+Simulation Time: +5.44001s real time: 22h, 9m, 57s.
+HOL Packet Delay,4,5440500000,26
+HOL Packet Delay,4,5446000000,24
+Simulation Time: +5.45001s real time: 22h, 9m, 59s.
+Simulation Time: +5.46001s real time: 22h, 10m, 0s.
+Simulation Time: +5.47001s real time: 22h, 10m, 2s.
+Simulation Time: +5.48001s real time: 22h, 10m, 3s.
+HOL Packet Delay,4,5483500000,56
+Simulation Time: +5.49001s real time: 22h, 10m, 5s.
+Simulation Time: +5.50001s real time: 22h, 10m, 6s.
+Simulation Time: +5.51001s real time: 22h, 10m, 7s.
+Simulation Time: +5.52001s real time: 22h, 10m, 9s.
+HOL Packet Delay,4,5521000000,88
+HOL Packet Delay,4,5524000000,82
+HOL Packet Delay,4,5529500000,82
+Simulation Time: +5.53001s real time: 22h, 10m, 10s.
+HOL Packet Delay,4,5534000000,80
+HOL Packet Delay,4,5538000000,77
+Simulation Time: +5.54001s real time: 22h, 10m, 11s.
+HOL Packet Delay,4,5541000000,74
+HOL Packet Delay,4,5543500000,69
+HOL Packet Delay,4,5546500000,66
+HOL Packet Delay,4,5547500000,64
+Simulation Time: +5.55001s real time: 22h, 10m, 13s.
+HOL Packet Delay,4,5550500000,58
+HOL Packet Delay,4,5553000000,56
+Simulation Time: +5.56001s real time: 22h, 10m, 14s.
+Simulation Time: +5.57001s real time: 22h, 10m, 15s.
+HOL Packet Delay,4,5576500000,74
+HOL Packet Delay,4,5577500000,74
+Simulation Time: +5.58001s real time: 22h, 10m, 17s.
+HOL Packet Delay,4,5589000000,72
+Simulation Time: +5.59001s real time: 22h, 10m, 18s.
+HOL Packet Delay,4,5591500000,69
+HOL Packet Delay,4,5594500000,64
+HOL Packet Delay,4,5595500000,61
+Simulation Time: +5.60001s real time: 22h, 10m, 20s.
+HOL Packet Delay,4,5608000000,66
+Simulation Time: +5.61001s real time: 22h, 10m, 21s.
+Simulation Time: +5.62001s real time: 22h, 10m, 23s.
+HOL Packet Delay,4,5620500000,72
+HOL Packet Delay,4,5623500000,69
+HOL Packet Delay,4,5627500000,66
+Simulation Time: +5.63001s real time: 22h, 10m, 24s.
+HOL Packet Delay,4,5630500000,64
+HOL Packet Delay,4,5638000000,66
+Simulation Time: +5.64001s real time: 22h, 10m, 25s.
+HOL Packet Delay,4,5640500000,61
+HOL Packet Delay,4,5643500000,58
+HOL Packet Delay,4,5646000000,53
+Simulation Time: +5.65001s real time: 22h, 10m, 27s.
+HOL Packet Delay,4,5650500000,50
+HOL Packet Delay,4,5653000000,48
+HOL Packet Delay,4,5657000000,45
+HOL Packet Delay,4,5658000000,45
+Simulation Time: +5.66001s real time: 22h, 10m, 28s.
+HOL Packet Delay,4,5667000000,45
+Simulation Time: +5.67001s real time: 22h, 10m, 29s.
+Simulation Time: +5.68001s real time: 22h, 10m, 31s.
+Simulation Time: +5.69001s real time: 22h, 10m, 32s.
+HOL Packet Delay,4,5695500000,64
+Simulation Time: +5.70001s real time: 22h, 10m, 33s.
+HOL Packet Delay,4,5705000000,69
+HOL Packet Delay,4,5708500000,64
+Simulation Time: +5.71001s real time: 22h, 10m, 35s.
+HOL Packet Delay,4,5719500000,69
+Simulation Time: +5.72001s real time: 22h, 10m, 36s.
+HOL Packet Delay,4,5722500000,66
+HOL Packet Delay,4,5726500000,64
+Simulation Time: +5.73001s real time: 22h, 10m, 38s.
+Simulation Time: +5.74001s real time: 22h, 10m, 39s.
+HOL Packet Delay,4,5742500000,74
+Simulation Time: +5.75001s real time: 22h, 10m, 40s.
+HOL Packet Delay,4,5756500000,82
+HOL Packet Delay,4,5759500000,77
+Simulation Time: +5.76001s real time: 22h, 10m, 42s.
+HOL Packet Delay,4,5760500000,74
+HOL Packet Delay,4,5764000000,72
+HOL Packet Delay,4,5769000000,69
+Simulation Time: +5.77001s real time: 22h, 10m, 43s.
+HOL Packet Delay,4,5771500000,66
+Simulation Time: +5.78001s real time: 22h, 10m, 45s.
+HOL Packet Delay,4,5782500000,69
+HOL Packet Delay,4,5787000000,69
+Simulation Time: +5.79001s real time: 22h, 10m, 46s.
+HOL Packet Delay,4,5791000000,66
+HOL Packet Delay,4,5794500000,61
+HOL Packet Delay,4,5798000000,61
+HOL Packet Delay,4,5799000000,61
+Simulation Time: +5.80001s real time: 22h, 10m, 47s.
+Simulation Time: +5.81001s real time: 22h, 10m, 48s.
+HOL Packet Delay,4,5815000000,64
+Simulation Time: +5.82001s real time: 22h, 10m, 50s.
+HOL Packet Delay,4,5821500000,66
+Simulation Time: +5.83001s real time: 22h, 10m, 51s.
+HOL Packet Delay,4,5831000000,66
+HOL Packet Delay,4,5832000000,66
+HOL Packet Delay,4,5834500000,58
+HOL Packet Delay,4,5837000000,53
+Simulation Time: +5.84001s real time: 22h, 10m, 53s.
+HOL Packet Delay,4,5840500000,53
+HOL Packet Delay,4,5841500000,53
+HOL Packet Delay,4,5847500000,45
+HOL Packet Delay,4,5848500000,42
+Simulation Time: +5.85001s real time: 22h, 10m, 54s.
+HOL Packet Delay,4,5853500000,42
+HOL Packet Delay,4,5856000000,42
+Simulation Time: +5.86001s real time: 22h, 10m, 56s.
+HOL Packet Delay,4,5864000000,37
+HOL Packet Delay,4,5865000000,34
+Simulation Time: +5.87001s real time: 22h, 10m, 57s.
+HOL Packet Delay,4,5874000000,34
+Simulation Time: +5.88001s real time: 22h, 10m, 59s.
+HOL Packet Delay,4,5881500000,37
+HOL Packet Delay,4,5886500000,37
+Simulation Time: +5.89001s real time: 22h, 11m, 0s.
+HOL Packet Delay,4,5892500000,34
+HOL Packet Delay,4,5900000000,37
+Simulation Time: +5.90001s real time: 22h, 11m, 2s.
+Simulation Time: +5.91001s real time: 22h, 11m, 3s.
+Simulation Time: +5.92001s real time: 22h, 11m, 4s.
+Simulation Time: +5.93001s real time: 22h, 11m, 6s.
+Simulation Time: +5.94001s real time: 22h, 11m, 7s.
+Simulation Time: +5.95001s real time: 22h, 11m, 9s.
+Simulation Time: +5.96001s real time: 22h, 11m, 10s.
+HOL Packet Delay,4,5967000000,98
+Simulation Time: +5.97001s real time: 22h, 11m, 11s.
+Simulation Time: +5.98001s real time: 22h, 11m, 12s.
+HOL Packet Delay,4,5985500000,109
+Simulation Time: +5.99001s real time: 22h, 11m, 14s.
+HOL Packet Delay,4,5990500000,109
+Simulation Time: +6.00001s real time: 22h, 11m, 16s.
+Simulation Time: +6.01001s real time: 22h, 11m, 17s.
+Simulation Time: +6.02001s real time: 22h, 11m, 18s.
+HOL Packet Delay,4,6023500000,133
+HOL Packet Delay,4,6028000000,133
+Simulation Time: +6.03001s real time: 22h, 11m, 20s.
+Simulation Time: +6.04001s real time: 22h, 11m, 21s.
+Simulation Time: +6.05001s real time: 22h, 11m, 23s.
+HOL Packet Delay,4,6050500000,149
+HOL Packet Delay,4,6057500000,149
+Simulation Time: +6.06001s real time: 22h, 11m, 24s.
+HOL Packet Delay,4,6066500000,152
+Simulation Time: +6.07001s real time: 22h, 11m, 26s.
+HOL Packet Delay,4,6072500000,152
+HOL Packet Delay,4,6080000000,152
+Simulation Time: +6.08001s real time: 22h, 11m, 28s.
+Simulation Time: +6.09001s real time: 22h, 11m, 30s.
+Simulation Time: +6.10001s real time: 22h, 11m, 31s.
+HOL Packet Delay,4,6106500000,173
+Simulation Time: +6.11001s real time: 22h, 11m, 32s.
+HOL Packet Delay,4,6111000000,170
+HOL Packet Delay,4,6113500000,168
+HOL Packet Delay,4,6119000000,165
+HOL Packet Delay,4,6120000000,165
+Simulation Time: +6.12001s real time: 22h, 11m, 34s.
+HOL Packet Delay,4,6124500000,160
+HOL Packet Delay,4,6127000000,154
+HOL Packet Delay,4,6128000000,154
+Simulation Time: +6.13001s real time: 22h, 11m, 35s.
+HOL Packet Delay,4,6130500000,146
+HOL Packet Delay,4,6133000000,141
+HOL Packet Delay,4,6136000000,138
+HOL Packet Delay,4,6139000000,138
+Simulation Time: +6.14001s real time: 22h, 11m, 37s.
+HOL Packet Delay,4,6142500000,133
+HOL Packet Delay,4,6147000000,133
+HOL Packet Delay,4,6148000000,133
+Simulation Time: +6.15001s real time: 22h, 11m, 38s.
+HOL Packet Delay,4,6153000000,125
+HOL Packet Delay,4,6158000000,125
+Simulation Time: +6.16001s real time: 22h, 11m, 40s.
+HOL Packet Delay,4,6164500000,125
+Simulation Time: +6.17001s real time: 22h, 11m, 41s.
+HOL Packet Delay,4,6172500000,125
+HOL Packet Delay,4,6179500000,128
+Simulation Time: +6.18001s real time: 22h, 11m, 43s.
+HOL Packet Delay,4,6182500000,122
+HOL Packet Delay,4,6189500000,125
+Simulation Time: +6.19001s real time: 22h, 11m, 44s.
+HOL Packet Delay,4,6192500000,122
+HOL Packet Delay,4,6195000000,117
+HOL Packet Delay,4,6196000000,117
+HOL Packet Delay,4,6199000000,109
+HOL Packet Delay,4,6200000000,109
+Simulation Time: +6.20001s real time: 22h, 11m, 46s.
+HOL Packet Delay,4,6203000000,101
+Simulation Time: +6.21001s real time: 22h, 11m, 48s.
+HOL Packet Delay,4,6216000000,106
+Simulation Time: +6.22001s real time: 22h, 11m, 49s.
+HOL Packet Delay,4,6226500000,109
+Simulation Time: +6.23001s real time: 22h, 11m, 50s.
+HOL Packet Delay,4,6231500000,109
+HOL Packet Delay,4,6236500000,106
+HOL Packet Delay,4,6239000000,104
+Simulation Time: +6.24001s real time: 22h, 11m, 52s.
+Simulation Time: +6.25001s real time: 22h, 11m, 54s.
+HOL Packet Delay,4,6258500000,117
+Simulation Time: +6.26001s real time: 22h, 11m, 55s.
+HOL Packet Delay,4,6269000000,120
+Simulation Time: +6.27001s real time: 22h, 11m, 57s.
+HOL Packet Delay,4,6274500000,120
+HOL Packet Delay,4,6275500000,114
+Simulation Time: +6.28001s real time: 22h, 11m, 59s.
+HOL Packet Delay,4,6285000000,117
+Simulation Time: +6.29001s real time: 22h, 12m, 1s.
+HOL Packet Delay,4,6292000000,120
+HOL Packet Delay,4,6295500000,114
+HOL Packet Delay,4,6298500000,112
+Simulation Time: +6.30001s real time: 22h, 12m, 2s.
+HOL Packet Delay,4,6302000000,112
+HOL Packet Delay,4,6303000000,112
+HOL Packet Delay,4,6305500000,101
+HOL Packet Delay,4,6309000000,98
+HOL Packet Delay,4,6310000000,93
+Simulation Time: +6.31001s real time: 22h, 12m, 4s.
+HOL Packet Delay,4,6313500000,90
+HOL Packet Delay,4,6317500000,90
+HOL Packet Delay,4,6318500000,90
+Simulation Time: +6.32001s real time: 22h, 12m, 6s.
+HOL Packet Delay,4,6324500000,82
+HOL Packet Delay,4,6327000000,80
+HOL Packet Delay,4,6330000000,74
+Simulation Time: +6.33001s real time: 22h, 12m, 8s.
+HOL Packet Delay,4,6331000000,72
+HOL Packet Delay,4,6335000000,69
+HOL Packet Delay,4,6336000000,69
+HOL Packet Delay,4,6338500000,58
+Simulation Time: +6.34001s real time: 22h, 12m, 9s.
+HOL Packet Delay,4,6341500000,58
+HOL Packet Delay,4,6344500000,53
+HOL Packet Delay,4,6348500000,50
+HOL Packet Delay,4,6349500000,48
+Simulation Time: +6.35001s real time: 22h, 12m, 11s.
+Simulation Time: +6.36001s real time: 22h, 12m, 13s.
+Simulation Time: +6.37001s real time: 22h, 12m, 14s.
+HOL Packet Delay,4,6377500000,66
+Simulation Time: +6.38001s real time: 22h, 12m, 16s.
+Simulation Time: +6.39001s real time: 22h, 12m, 18s.
+HOL Packet Delay,4,6393500000,77
+HOL Packet Delay,4,6399000000,77
+Simulation Time: +6.40001s real time: 22h, 12m, 19s.
+HOL Packet Delay,4,6401500000,72
+HOL Packet Delay,4,6405500000,72
+Simulation Time: +6.41001s real time: 22h, 12m, 21s.
+HOL Packet Delay,4,6415000000,72
+HOL Packet Delay,4,6419500000,72
+Simulation Time: +6.42001s real time: 22h, 12m, 23s.
+HOL Packet Delay,4,6422500000,69
+HOL Packet Delay,4,6426500000,64
+Simulation Time: +6.43001s real time: 22h, 12m, 25s.
+HOL Packet Delay,4,6430500000,64
+HOL Packet Delay,4,6433000000,58
+Simulation Time: +6.44001s real time: 22h, 12m, 27s.
+HOL Packet Delay,4,6440500000,61
+HOL Packet Delay,4,6445500000,61
+HOL Packet Delay,4,6448500000,56
+Simulation Time: +6.45001s real time: 22h, 12m, 28s.
+HOL Packet Delay,4,6451500000,53
+Simulation Time: +6.46001s real time: 22h, 12m, 30s.
+Simulation Time: +6.47001s real time: 22h, 12m, 32s.
+HOL Packet Delay,4,6478000000,72
+Simulation Time: +6.48001s real time: 22h, 12m, 34s.
+Simulation Time: +6.49001s real time: 22h, 12m, 36s.
+HOL Packet Delay,4,6493500000,82
+HOL Packet Delay,4,6496500000,80
+Simulation Time: +6.50001s real time: 22h, 12m, 38s.
+HOL Packet Delay,4,6506500000,80
+HOL Packet Delay,4,6510000000,80
+Simulation Time: +6.51001s real time: 22h, 12m, 39s.
+HOL Packet Delay,4,6513000000,77
+HOL Packet Delay,4,6518000000,74
+Simulation Time: +6.52001s real time: 22h, 12m, 41s.
+Simulation Time: +6.53001s real time: 22h, 12m, 43s.
+HOL Packet Delay,4,6533000000,82
+HOL Packet Delay,4,6535500000,77
+HOL Packet Delay,4,6539500000,77
+Simulation Time: +6.54001s real time: 22h, 12m, 45s.
+HOL Packet Delay,4,6544000000,74
+Simulation Time: +6.55001s real time: 22h, 12m, 47s.
+HOL Packet Delay,4,6551500000,74
+HOL Packet Delay,4,6559000000,77
+HOL Packet Delay,4,6560000000,77
+Simulation Time: +6.56001s real time: 22h, 12m, 48s.
+Simulation Time: +6.57001s real time: 22h, 12m, 50s.
+Simulation Time: +6.58001s real time: 22h, 12m, 52s.
+Simulation Time: +6.59001s real time: 22h, 12m, 54s.
+HOL Packet Delay,4,6594000000,98
+HOL Packet Delay,4,6596500000,96
+HOL Packet Delay,4,6599500000,90
+Simulation Time: +6.60001s real time: 22h, 12m, 56s.
+HOL Packet Delay,4,6602500000,88
+HOL Packet Delay,4,6605000000,85
+HOL Packet Delay,4,6607500000,80
+Simulation Time: +6.61001s real time: 22h, 12m, 58s.
+HOL Packet Delay,4,6612000000,80
+Simulation Time: +6.62001s real time: 22h, 13m, 0s.
+HOL Packet Delay,4,6628500000,88
+Simulation Time: +6.63001s real time: 22h, 13m, 2s.
+HOL Packet Delay,4,6632000000,85
+HOL Packet Delay,4,6635000000,85
+HOL Packet Delay,4,6638000000,80
+Simulation Time: +6.64001s real time: 22h, 13m, 3s.
+HOL Packet Delay,4,6642000000,77
+HOL Packet Delay,4,6643000000,72
+Simulation Time: +6.65001s real time: 22h, 13m, 5s.
+HOL Packet Delay,4,6651000000,74
+HOL Packet Delay,4,6653500000,72
+HOL Packet Delay,4,6659500000,69
+Simulation Time: +6.66001s real time: 22h, 13m, 7s.
+HOL Packet Delay,4,6662500000,66
+Simulation Time: +6.67001s real time: 22h, 13m, 8s.
+Simulation Time: +6.68001s real time: 22h, 13m, 10s.
+HOL Packet Delay,4,6680500000,80
+HOL Packet Delay,4,6684000000,74
+HOL Packet Delay,4,6688500000,74
+Simulation Time: +6.69001s real time: 22h, 13m, 12s.
+HOL Packet Delay,4,6691000000,72
+HOL Packet Delay,4,6694000000,66
+HOL Packet Delay,4,6697500000,64
+HOL Packet Delay,4,6698500000,64
+Simulation Time: +6.70001s real time: 22h, 13m, 14s.
+HOL Packet Delay,4,6706000000,58
+HOL Packet Delay,4,6708500000,56
+Simulation Time: +6.71001s real time: 22h, 13m, 16s.
+HOL Packet Delay,4,6712000000,50
+HOL Packet Delay,4,6714500000,48
+HOL Packet Delay,4,6717000000,45
+HOL Packet Delay,4,6719500000,40
+Simulation Time: +6.72001s real time: 22h, 13m, 18s.
+HOL Packet Delay,4,6724000000,40
+HOL Packet Delay,4,6726500000,34
+Simulation Time: +6.73001s real time: 22h, 13m, 20s.
+HOL Packet Delay,4,6735000000,37
+Simulation Time: +6.74001s real time: 22h, 13m, 21s.
+HOL Packet Delay,4,6742000000,40
+Simulation Time: +6.75001s real time: 22h, 13m, 23s.
+Simulation Time: +6.76001s real time: 22h, 13m, 25s.
+Simulation Time: +6.77001s real time: 22h, 13m, 26s.
+HOL Packet Delay,4,6776000000,64
+Simulation Time: +6.78001s real time: 22h, 13m, 28s.
+Simulation Time: +6.79001s real time: 22h, 13m, 30s.
+Simulation Time: +6.80001s real time: 22h, 13m, 32s.
+HOL Packet Delay,4,6801000000,85
+Simulation Time: +6.81001s real time: 22h, 13m, 34s.
+HOL Packet Delay,4,6813000000,88
+HOL Packet Delay,4,6819500000,90
+Simulation Time: +6.82001s real time: 22h, 13m, 36s.
+HOL Packet Delay,4,6822500000,88
