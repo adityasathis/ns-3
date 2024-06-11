@@ -153,12 +153,12 @@ def run_experiment(command, log_file):
     return log_file
 
 numBs = [(6, 0), (3, 3)]
-numUtsPerBs = [4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50]
-trafficRatios = ["1:1:1:1", "2:1:1:1", "1:2:1:1", "1:1:2:1", "1:1:1:2"]
+numUtsPerBs = [4, 5, 6, 7, 8, 9, 10, 15, 20]
+trafficRatios = ["1:1:1:1", "2:1:1:1", "1:2:1:1", "1:1:2:1"]
 numerology = [0, 1, 2]
 bandwidth = [20e6, 40e6, 80e6]
 enableCapcScheduler = [0, 1]
-simTime = 10
+simTime = 1
 runs = 5
 
 def generate_commands():
@@ -230,19 +230,19 @@ def generate_commands():
     numAps = 0
     uts = 10
     ratio = "1:1:1:1"
+    bw = 20e6
     for num in numerology:
-        for bw in bandwidth:
-            for capc in enableCapcScheduler:
-                for run in range(runs):
-                    command = [
-                        "./ns3", "run",
-                        f"nru_wifi_qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
-                        f"--trafficRatio={ratio} --numerology={num} --bandwidth={bw} "
-                        f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run}"
-                    ]
+        for capc in enableCapcScheduler:
+            for run in range(runs):
+                command = [
+                    "./ns3", "run",
+                    f"nru_wifi_qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
+                    f"--trafficRatio={ratio} --numerology={num} --bandwidth={bw} "
+                    f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run}"
+                ]
                     
-                    log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-capc{capc}-simtime{simTime}-run{run}.log"
-                    commands.append((command, log_file))
+                log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-capc{capc}-simtime{simTime}-run{run}.log"
+                commands.append((command, log_file))
 
     return commands
 
