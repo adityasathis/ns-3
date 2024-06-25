@@ -26,14 +26,14 @@
 #       for run in range(runs):
 #         command = [
 #           "./ns3", "run",
-#           f"nru_wifi_qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
+#           f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
 #           f"--trafficRatio={ratio} --numerology={num} --bandwidth={bw} "
 #           f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run}"
 #         ]
         
 #         log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-capc{capc}-simtime{simTime}-run{run}.log"
         
-#         print(f"nru_wifi_qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
+#         print(f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
 #               f"--trafficRatios={ratio} --numerology={num} --bandwidth={bw} "
 #               f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run}")
         
@@ -52,14 +52,14 @@
 #     for run in range(runs):
 #       command = [
 #         "./ns3", "run",
-#         f"nru_wifi_qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
+#         f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
 #         f"--trafficRatio={ratio} --numerology={num} --bandwidth={bw} "
 #         f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run}"
 #       ]
       
 #       log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-capc{capc}-simtime{simTime}-run{run}.log"
       
-#       print(f"nru_wifi_qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
+#       print(f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
 #             f"--trafficRatios={ratio} --numerology={num} --bandwidth={bw} "
 #             f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run}")
       
@@ -78,14 +78,14 @@
 #     for run in range(runs):
 #       command = [
 #         "./ns3", "run",
-#         f"nru_wifi_qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
+#         f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
 #         f"--trafficRatio={ratio} --numerology={num} --bandwidth={bw} "
 #         f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run}"
 #       ]
       
 #       log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-capc{capc}-simtime{simTime}-run{run}.log"
       
-#       print(f"nru_wifi_qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
+#       print(f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
 #             f"--trafficRatios={ratio} --numerology={num} --bandwidth={bw} "
 #             f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run}")
       
@@ -104,14 +104,14 @@
 #     for run in range(runs):
 #       command = [
 #         "./ns3", "run",
-#         f"nru_wifi_qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
+#         f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
 #         f"--trafficRatio={ratio} --numerology={num} --bandwidth={bw} "
 #         f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run}"
 #       ]
       
 #       log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-capc{capc}-simtime{simTime}-run{run}.log"
       
-#       print(f"nru_wifi_qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
+#       print(f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
 #             f"--trafficRatios={ratio} --numerology={num} --bandwidth={bw} "
 #             f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run}")
       
@@ -128,14 +128,14 @@
 # #                       # Construct the command
 # #                       command = [
 # #                         "./ns3", "run",
-# #                         f"nru_wifi_qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
+# #                         f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
 # #                         f"--trafficRatio={ratio} --numerology={num} --bandwidth={bw} "
 # #                         f"--enableCapcScheduler={capc} --simTime={simTime}"
 # #                       ]
                       
 # #                       log_file = f"nru-logs/gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-capc{capc}-simtime{simTime}.log"
                       
-# #                       print(f"nru_wifi_qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
+# #                       print(f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
 # #                             f"--trafficRatios={ratio} --numerology={num} --bandwidth={bw} "
 # #                             f"--enableCapcScheduler={capc} --simTime={simTime}")
                       
@@ -158,11 +158,32 @@ trafficRatios = ["1:1:1:1", "2:1:1:1", "1:2:1:1", "1:1:2:1", "1:1:1:2"]
 numerology = [0, 1, 2]
 bandwidth = [20e6, 40e6, 80e6]
 enableCapcScheduler = [0, 1]
-simTime = 10
-runs = 5
+simTime = 5
+runs = 25
 
 def generate_commands():
     commands = []
+
+    # # Experiment 0: Maximum Throughput on all CAPCs
+    # variation = "nothing"
+    # ratio = "1:1:1:1"
+    # num = 1
+    # bw = 20e6
+    # uts = 4
+    # numGnbs = 6
+    # numAps = 0
+    # capc = 1
+    # scheduler = "PF"
+    # lcScheduler = 0
+    # for run in range(runs):
+    #     command = [
+    #         "./ns3", "run",
+    #         f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
+    #         f"--trafficRatio={ratio} --numerology={num} --bandwidth={bw} "
+    #         f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run} --scheduler={scheduler} --lcScheduler={lcScheduler}"
+    #     ]
+    #     log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-capc{capc}-simtime{simTime}-run{run}.log"
+    #     commands.append((command, log_file)) 
 
     # Experiment 1: Homogeneous NR-U
     # Variations (1.1): Changing UtsPerBs
@@ -170,79 +191,108 @@ def generate_commands():
     ratio = "1:1:1:1"
     num = 1
     bw = 20e6
+    trafficModel = 1
     for uts in numUtsPerBs:
         for numGnbs, numAps in numBs:
             for capc in enableCapcScheduler:
+                if capc == 0:
+                    scheduler = "PF"
+                    lcScheduler = 0
+                else:
+                    scheduler = "Qos"
+                    lcScheduler = 1
+
                 for run in range(runs):
                     command = [
-                        "./ns3", "run",
-                        f"nru_wifi_qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
+                        "./ns3", "run", 
+                        f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
                         f"--trafficRatio={ratio} --numerology={num} --bandwidth={bw} "
-                        f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run}"
+                        f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run} --scheduler={scheduler} --lcScheduler={lcScheduler} --trafficModel={trafficModel}"
                     ]
                     
-                    log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-capc{capc}-simtime{simTime}-run{run}.log"
+                    log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-scheduler{scheduler}-lcScheduler{lcScheduler}-trafficModel{trafficModel}-capc{capc}-simtime{simTime}-run{run}.log"
                     commands.append((command, log_file))
 
-    # Variations (1.2): Changing Traffic Ratios
-    variation = "ratios"
-    numGnbs = 6
-    numAps = 0
-    uts = 10
-    num = 0
-    bw = 20e6
-    for ratio in trafficRatios:
-        for capc in enableCapcScheduler:
-            for run in range(runs):
-                command = [
-                    "./ns3", "run",
-                    f"nru_wifi_qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
-                    f"--trafficRatio={ratio} --numerology={num} --bandwidth={bw} "
-                    f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run}"
-                ]
+    # # Variations (1.2): Changing Traffic Ratios
+    # variation = "ratios"
+    # numGnbs = 6
+    # numAps = 0
+    # uts = 10
+    # num = 0
+    # bw = 20e6
+    # trafficModel = 1
+    # for ratio in trafficRatios:
+    #     for capc in enableCapcScheduler:
+    #         if capc == 0:
+    #             scheduler = "PF"
+    #             lcScheduler = 0
+    #         else:
+    #             scheduler = "Qos"
+    #             lcScheduler = 1
+    #         for run in range(runs):
+    #             command = [
+    #                 "./ns3", "run",
+    #                 f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
+    #                 f"--trafficRatio={ratio} --numerology={num} --bandwidth={bw} "
+    #                 f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run} --scheduler={scheduler} --lcScheduler={lcScheduler} --trafficModel={trafficModel}"
+    #             ]
                 
-                log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-capc{capc}-simtime{simTime}-run{run}.log"
-                commands.append((command, log_file))
+    #             log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-scheduler{scheduler}-lcScheduler{lcScheduler}-trafficModel{trafficModel}-capc{capc}-simtime{simTime}-run{run}.log"
+    #             commands.append((command, log_file))
 
-    # Variations (1.3): Bandwidth
-    variation = "bandwidth"
-    numGnbs = 6
-    numAps = 0
-    uts = 10
-    num = 0
-    ratio = "1:1:1:1"
-    for bw in bandwidth:
-        for capc in enableCapcScheduler:
-            for run in range(runs):
-                command = [
-                    "./ns3", "run",
-                    f"nru_wifi_qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
-                    f"--trafficRatio={ratio} --numerology={num} --bandwidth={bw} "
-                    f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run}"
-                ]
+    # # Variations (1.3): Bandwidth
+    # variation = "bandwidth"
+    # numGnbs = 6
+    # numAps = 0
+    # uts = 10
+    # num = 0
+    # ratio = "1:1:1:1"
+    # trafficModel = 1
+    # for bw in bandwidth:
+    #     for capc in enableCapcScheduler:
+    #         if capc == 0:
+    #             scheduler = "PF"
+    #             lcScheduler = 0
+    #         else:
+    #             scheduler = "Qos"
+    #             lcScheduler = 1
+    #         for run in range(runs):
+    #             command = [
+    #                 "./ns3", "run",
+    #                 f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
+    #                 f"--trafficRatio={ratio} --numerology={num} --bandwidth={bw} "
+    #                 f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run} --scheduler={scheduler} --lcScheduler={lcScheduler} --trafficModel={trafficModel}"
+    #             ]
                 
-                log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-capc{capc}-simtime{simTime}-run{run}.log"
-                commands.append((command, log_file))
+    #             log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-scheduler{scheduler}-lcScheduler{lcScheduler}-trafficModel{trafficModel}-capc{capc}-simtime{simTime}-run{run}.log"
+    #             commands.append((command, log_file))
 
-    # Variations (1.4): Numerology
-    variation = "numerology"
-    numGnbs = 6
-    numAps = 0
-    uts = 10
-    ratio = "1:1:1:1"
-    for num in numerology:
-        for bw in bandwidth:
-            for capc in enableCapcScheduler:
-                for run in range(runs):
-                    command = [
-                        "./ns3", "run",
-                        f"nru_wifi_qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
-                        f"--trafficRatio={ratio} --numerology={num} --bandwidth={bw} "
-                        f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run}"
-                    ]
+    # # Variations (1.4): Numerology
+    # variation = "numerology"
+    # numGnbs = 6
+    # numAps = 0
+    # uts = 10
+    # ratio = "1:1:1:1"
+    # trafficModel = 1
+    # for num in numerology:
+    #     for bw in bandwidth:
+    #         for capc in enableCapcScheduler:
+    #             if capc == 0:
+    #                 scheduler = "PF"
+    #                 lcScheduler = 0
+    #             else:
+    #                 scheduler = "Qos"
+    #                 lcScheduler = 1
+    #             for run in range(runs):
+    #                 command = [
+    #                     "./ns3", "run",
+    #                     f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
+    #                     f"--trafficRatio={ratio} --numerology={num} --bandwidth={bw} "
+    #                     f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run} --scheduler={scheduler} --lcScheduler={lcScheduler} --trafficModel={trafficModel}"
+    #                 ]
                     
-                    log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-capc{capc}-simtime{simTime}-run{run}.log"
-                    commands.append((command, log_file))
+    #                 log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-scheduler{scheduler}-lcScheduler{lcScheduler}-trafficModel{trafficModel}-capc{capc}-simtime{simTime}-run{run}.log"
+    #                 commands.append((command, log_file))
 
     return commands
 
