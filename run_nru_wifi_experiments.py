@@ -159,7 +159,7 @@ numerology = [0, 1, 2]
 bandwidth = [20e6, 40e6, 80e6]
 enableCapcScheduler = [0, 1]
 simTime = 5
-runs = 100
+runs = 200
 
 def generate_commands():
     commands = []
@@ -192,17 +192,18 @@ def generate_commands():
     num = 1
     bw = 20e6
     trafficModel = 1
-    for uts in numUtsPerBs:
-        for numGnbs, numAps in numBs:
-            for capc in enableCapcScheduler:
-                if capc == 0:
-                    scheduler = "PF"
-                    lcScheduler = 0
-                else:
-                    scheduler = "Qos"
-                    lcScheduler = 1
 
-                for run in range(runs):
+    for run in range(runs):
+        for numGnbs, numAps in numBs:
+            for uts in numUtsPerBs:
+                for capc in enableCapcScheduler:
+                    if capc == 0:
+                        scheduler = "PF"
+                        lcScheduler = 0
+                    else:
+                        scheduler = "Qos"
+                        lcScheduler = 1
+
                     command = [
                         "./ns3", "run", 
                         f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
