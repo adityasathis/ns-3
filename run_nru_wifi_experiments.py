@@ -153,13 +153,13 @@ def run_experiment(command, log_file):
     return log_file
 
 numBs = [(6, 0), (3, 3)]
-numUtsPerBs = [4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+numUtsPerBs = [4, 8, 12, 16, 20, 24, 28, 32]
 trafficRatios = ["1:1:1:1", "2:1:1:1", "1:2:1:1", "1:1:2:1", "1:1:1:2"]
 numerology = [0, 1, 2]
 bandwidth = [20e6, 40e6, 80e6]
 enableCapcScheduler = [0, 1]
 simTime = 5
-runs = 25
+runs = 100
 
 def generate_commands():
     commands = []
@@ -302,8 +302,19 @@ max_workers = num_cores  # Set max_workers to the number of CPU cores
 commands = generate_commands()  # Assuming this function is defined as in previous examples
 
 # Run commands in parallel
+#with ProcessPoolExecutor(max_workers=max_workers) as executor:
+#    futures = [executor.submit(run_experiment, cmd, log) for cmd, log in commands]
+#    num_commands = len(commands)
+#    for future in as_completed(futures):
+#        log_file = future.result()
+#        print(f"Completed: {log_file}")
+
 with ProcessPoolExecutor(max_workers=max_workers) as executor:
     futures = [executor.submit(run_experiment, cmd, log) for cmd, log in commands]
+    num_commands = len(commands)
+    completed_count = 0
+                    
     for future in as_completed(futures):
         log_file = future.result()
-        print(f"Completed: {log_file}")
+        completed_count += 1
+        print(f"Completed [{completed_count}/{num_commands}]: {log_file}")
