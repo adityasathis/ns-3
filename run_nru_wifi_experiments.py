@@ -160,7 +160,7 @@ numerology = [0, 1, 2]
 bandwidth = [20e6, 40e6, 80e6]
 enableCapcScheduler = [0, 1, 2]
 simTime = 5
-runs = 25
+runs = 1
 
 def generate_commands():
     commands = []
