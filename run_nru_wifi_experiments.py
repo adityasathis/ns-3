@@ -153,13 +153,14 @@ def run_experiment(command, log_file):
     return log_file
 
 numBs = [(6, 0), (3, 3)]
-numUtsPerBs = [4, 8, 12, 16, 20, 24, 28, 32]
+numUtsPerBs = [4, 8, 12, 16, 20, 24]
+#numUtsPerBs = [16]
 trafficRatios = ["1:1:1:1", "2:1:1:1", "1:2:1:1", "1:1:2:1", "1:1:1:2"]
 numerology = [0, 1, 2]
 bandwidth = [20e6, 40e6, 80e6]
-enableCapcScheduler = [0, 1]
+enableCapcScheduler = [0, 1, 2]
 simTime = 5
-runs = 200
+runs = 25
 
 def generate_commands():
     commands = []
@@ -190,17 +191,24 @@ def generate_commands():
     variation = "uts"
     ratio = "1:1:1:1"
     num = 1
-    bw = 20e6
-    trafficModel = 1
+    bw = 40e6
+    trafficModel = 0
+    numBs = [(6,0)]
 
     for run in range(runs):
         for numGnbs, numAps in numBs:
             for uts in numUtsPerBs:
-                for capc in enableCapcScheduler:
-                    if capc == 0:
+                for mode in enableCapcScheduler:
+                    if mode == 0:
+                        capc = 0
                         scheduler = "PF"
                         lcScheduler = 0
+                    elif mode == 1:
+                        capc = 0
+                        scheduler = "Qos"
+                        lcScheduler = 1
                     else:
+                        capc = 1
                         scheduler = "Qos"
                         lcScheduler = 1
 
