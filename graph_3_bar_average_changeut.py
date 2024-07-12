@@ -38,6 +38,7 @@ user_terminals = [4, 8, 12]
 capc_configs = [0, 1, 2]
 num_runs = 1
 trafficModel = 0
+num = 2
 
 # Initialize lists to store results
 throughput_guarantees = {capc: [] for capc in capc_configs}
@@ -61,7 +62,7 @@ for ut in user_terminals:
             scheduler = "Qos"
             lcScheduler = 1
 
-        file_paths = [f'nru-csv/ip/changeuts-gnb6-ap0-ut{ut}-ratio1111-numerology1-bandwidth40-scheduler{scheduler}-lcScheduler{lcScheduler}-trafficModel{trafficModel}-capc{capc}-simtime5-run{i}.csv' for i in range(num_runs)]
+        file_paths = [f'nru-csv/ip/changeuts-gnb6-ap0-ut{ut}-ratio1111-numerology{num}-bandwidth40-scheduler{scheduler}-lcScheduler{lcScheduler}-trafficModel{trafficModel}-capc{capc}-simtime5-run{i}.csv' for i in range(num_runs)]
         throughputs = []
         delays = []
         print(file_paths)

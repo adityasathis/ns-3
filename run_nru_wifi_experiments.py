@@ -153,7 +153,7 @@ def run_experiment(command, log_file):
     return log_file
 
 numBs = [(6, 0), (3, 3)]
-numUtsPerBs = [4, 8, 12, 16, 20, 24]
+numUtsPerBs = [4, 8, 12]
 #numUtsPerBs = [16]
 trafficRatios = ["1:1:1:1", "2:1:1:1", "1:2:1:1", "1:1:2:1", "1:1:1:2"]
 numerology = [0, 1, 2]
@@ -190,7 +190,7 @@ def generate_commands():
     # Variations (1.1): Changing UtsPerBs
     variation = "uts"
     ratio = "1:1:1:1"
-    num = 1
+    num = 2
     bw = 40e6
     trafficModel = 0
     numBs = [(6,0)]

@@ -1201,6 +1201,8 @@ LteRlcUm::DoReportBufferStatus()
             m_txBufferSize + 2 * m_txBuffer.size(); // Data in tx queue + estimated headers size
     }
 
+    holDelays.emplace_back(holDelay, Simulator::Now());
+
     LteMacSapProvider::ReportBufferStatusParameters r;
     r.rnti = m_rnti;
     r.lcid = m_lcid;

@@ -36,6 +36,7 @@ namespace ns3
 class LteRlcUm : public LteRlc
 {
   public:
+    std::vector<std::pair<ns3::Time, ns3::Time>> holDelays;
     uint32_t m_maxTxBufferSize; ///< maximum transmit buffer status
     uint32_t m_txBufferSize;    ///< transmit buffer size
     double m_avgThroughput;   ///< average throughput achieved in the RLC

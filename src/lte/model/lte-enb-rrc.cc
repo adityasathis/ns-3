@@ -476,15 +476,16 @@ UeManager::SetupDataRadioBearer(EpsBearer bearer,
       case 85:
       case 86:
       case 87:
-      case 88:
+
       case 89:
       case 90: rlc->m_capc = 0; break;
 
-      case 2:
+              case 2:
+          case 88:
       case 71:
       case 7: rlc->m_capc = 1; break;
 
-      case 4:
+        case 4:
       case 6:
       case 8:
       case 72:
