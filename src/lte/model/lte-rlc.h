@@ -143,7 +143,7 @@ class LteRlc : public Object // SimpleRefCount<LteRlc>
     double m_ipThroughput;
     double m_ipDelay;
 
-    uint8_t m_capc = 0;
+    uint8_t m_capc = 4;
 
     /// \todo MRE What is the sense to duplicate all the interfaces here???
     // NB to avoid the use of multiple inheritance

@@ -147,9 +147,12 @@ import itertools
 import os
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
+envVars = os.environ.copy()
+# envVars["NS_LOG"] = "NrGnbPhy:NrMacSchedulerNs3"
+
 def run_experiment(command, log_file):
     with open(log_file, "w") as f:
-        subprocess.run(command, stdout=f, stderr=subprocess.STDOUT)
+        subprocess.run(command, stdout=f, stderr=subprocess.STDOUT, env=envVars)
     return log_file
 
 numBs = [(6, 0), (3, 3)]

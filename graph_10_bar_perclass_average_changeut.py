@@ -30,7 +30,7 @@ def calculate_qos_metrics(file_path):
         
         for row in csv_reader:
             if (row[0] == 'OUTPUT'):
-                if ((float(row[2]) == 3e6) and (float(row[3]) == 10)):
+                if ((float(row[2]) == 5e6) and (float(row[3]) == 5)):
                     achievedTput0.append(float(row[4]))
                     guaranteedTput0.append(float(row[2])/1e6)
                     
@@ -39,7 +39,7 @@ def calculate_qos_metrics(file_path):
                         achievedDelay0.append(float(row[5]))
                         guaranteedDelay0.append(float(row[3]))
 
-                if ((float(row[2]) == 3e6) and (float(row[3]) == 150)):
+                if ((float(row[2]) == 5e6) and (float(row[3]) == 150)):
                     achievedTput1.append(float(row[4]))
                     guaranteedTput1.append(float(row[2])/1e6)
                     
@@ -48,7 +48,7 @@ def calculate_qos_metrics(file_path):
                         achievedDelay1.append(float(row[5]))
                         guaranteedDelay1.append(float(row[3]))
                         
-                if ((float(row[2]) == 3e6) and (float(row[3]) == 300)):
+                if ((float(row[2]) == 5e6) and (float(row[3]) == 300)):
                     achievedTput2.append(float(row[4]))
                     guaranteedTput2.append(float(row[2])/1e6)
                     
@@ -57,7 +57,7 @@ def calculate_qos_metrics(file_path):
                         achievedDelay2.append(float(row[5]))
                         guaranteedDelay2.append(float(row[3]))
                         
-                if ((float(row[2]) == 1e6) and (float(row[3]) == 300)):
+                if ((float(row[2]) == 5e6) and (float(row[3]) == 300)):
                     achievedTput3.append(float(row[4]))
                     
                     # Add delay only if it is not-zero
@@ -81,7 +81,7 @@ capc_configs = [0, 1, 2]
 num_runs = 1
 trafficModel = 0
 num = 2
-bw = 80
+bw = 40
 
 # Initialize lists to store results
 throughput_guarantees0 = {capc: [] for capc in capc_configs}
