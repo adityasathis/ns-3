@@ -1,4 +1,16 @@
 import csv
+"""
+The function `calculate_qos_metrics` processes data from multiple files to
+calculate Quality of Service (QoS) metrics such as throughput and delay, and
+then computes confidence intervals for the metrics.
+
+:param file_path: The `file_path` parameter in the code refers to the path of
+the CSV file that contains the data from which you want to calculate Quality of
+Service (QoS) metrics. The function `calculate_qos_metrics(file_path)` reads
+this file and extracts specific data points to calculate metrics like throughput
+and delay
+:return: The `calculate_qos_metrics` function returns the following values:
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 import os
@@ -30,39 +42,48 @@ def calculate_qos_metrics(file_path):
         
         for row in csv_reader:
             if (row[0] == 'OUTPUT'):
-                if ((float(row[2]) == 5e6) and (float(row[3]) == 5)):
-                    achievedTput0.append(float(row[4]))
+                if ((float(row[2]) == 3e7) and (float(row[3]) == 5)):
+                    achievedTput0.append(float(row[6]))
                     guaranteedTput0.append(float(row[2])/1e6)
                     
                     # Add delay only if it is not-zero
                     if (float(row[5]) != 0):
-                        achievedDelay0.append(float(row[5]))
+                        achievedDelay0.append(float(row[7]))
                         guaranteedDelay0.append(float(row[3]))
 
                 if ((float(row[2]) == 5e6) and (float(row[3]) == 150)):
-                    achievedTput1.append(float(row[4]))
+                    achievedTput1.append(float(row[6]))
                     guaranteedTput1.append(float(row[2])/1e6)
                     
                     # Add delay only if it is not-zero
                     if (float(row[5]) != 0):
-                        achievedDelay1.append(float(row[5]))
+                        achievedDelay1.append(float(row[7]))
                         guaranteedDelay1.append(float(row[3]))
                         
                 if ((float(row[2]) == 5e6) and (float(row[3]) == 300)):
-                    achievedTput2.append(float(row[4]))
+                    achievedTput2.append(float(row[6]))
                     guaranteedTput2.append(float(row[2])/1e6)
                     
                     # Add delay only if it is not-zero
                     if (float(row[5]) != 0):
-                        achievedDelay2.append(float(row[5]))
+                        achievedDelay2.append(float(row[7]))
                         guaranteedDelay2.append(float(row[3]))
                         
                 if ((float(row[2]) == 5e6) and (float(row[3]) == 300)):
-                    achievedTput3.append(float(row[4]))
+                    achievedTput3.append(float(row[6]))
                     
                     # Add delay only if it is not-zero
                     if (float(row[5]) != 0):
-                        achievedDelay3.append(float(row[5]))
+                        achievedDelay3.append(float(row[7]))
+
+    print(f"Average Delay0: {achievedDelay0}")
+    print(f"QoS Delay0: {guaranteedDelay0}")
+
+    print(f"Average Delay1: {achievedDelay1}")
+    print(f"QoS Delay1: {guaranteedDelay1}")
+
+    print(f"Average Delay2: {achievedDelay2}")
+    print(f"QoS Delay2: {guaranteedDelay2}")
 
     AverageThroughput0 = np.array(achievedTput0)
     AverageDelay0 = np.array(achievedDelay0)
@@ -77,11 +98,13 @@ def calculate_qos_metrics(file_path):
 
 # List of user terminals to consider
 user_terminals = [4, 8, 12]
+xlabels = ['24', '48', '72']
 capc_configs = [0, 1, 2]
 num_runs = 1
 trafficModel = 0
 num = 2
 bw = 40
+simTime = 50
 
 # Initialize lists to store results
 throughput_guarantees0 = {capc: [] for capc in capc_configs}
@@ -117,7 +140,7 @@ for ut in user_terminals:
             scheduler = "Qos"
             lcScheduler = 1
 
-        file_paths = [f'nru-csv/ip/changeuts-gnb6-ap0-ut{ut}-ratio1111-numerology{num}-bandwidth{bw}-scheduler{scheduler}-lcScheduler{lcScheduler}-trafficModel{trafficModel}-capc{capc}-simtime5-run{i}.csv' for i in range(num_runs)]
+        file_paths = [f'nru-csv/ip/changeuts-gnb6-ap0-ut{ut}-ratio1111-numerology{num}-bandwidth{bw}-scheduler{scheduler}-lcScheduler{lcScheduler}-trafficModel{trafficModel}-capc{capc}-simtime{simTime}-run{i}.csv' for i in range(num_runs)]
         throughputs0 = []
         throughputs1 = []
         throughputs2 = []
@@ -162,7 +185,8 @@ for ut in user_terminals:
         # Let us check if this ppf command is correct.
 
 # Plotting the results
-x = np.arange(len(user_terminals))  # the label locations
+
+x = np.arange(len(xlabels))  # the label locations
 width = 0.25  # the width of the bars
 
 fig, ax = plt.subplots(4, 2, figsize=(14, 6))
@@ -177,7 +201,7 @@ ax[0,0].set_xlabel('User Terminals Per gNB')
 ax[0,0].set_ylabel('Throughput (Mbps)')
 ax[0,0].set_title('Throughput (Mbps) vs User Terminals')
 ax[0,0].set_xticks(x)
-ax[0,0].set_xticklabels(user_terminals)
+ax[0,0].set_xticklabels(xlabels)
 ax[0,0].legend()
 ax[0,0].grid(True)
 
@@ -191,7 +215,7 @@ ax[0,1].set_xlabel('User Terminals Per gNB')
 ax[0,1].set_ylabel('Average Delay (ms)')
 ax[0,1].set_title('Average Delay (ms) vs User Terminals')
 ax[0,1].set_xticks(x)
-ax[0,1].set_xticklabels(user_terminals)
+ax[0,1].set_xticklabels(xlabels)
 ax[0,1].legend()
 ax[0,1].grid(True)
 
@@ -207,7 +231,7 @@ ax[1,0].set_xlabel('User Terminals Per gNB')
 ax[1,0].set_ylabel('Throughput (Mbps)')
 ax[1,0].set_title('Throughput (Mbps) vs User Terminals')
 ax[1,0].set_xticks(x)
-ax[1,0].set_xticklabels(user_terminals)
+ax[1,0].set_xticklabels(xlabels)
 ax[1,0].legend()
 ax[1,0].grid(True)
 
@@ -221,7 +245,7 @@ ax[1,1].set_xlabel('User Terminals Per gNB')
 ax[1,1].set_ylabel('Average Delay (ms)')
 ax[1,1].set_title('Average Delay (ms) vs User Terminals')
 ax[1,1].set_xticks(x)
-ax[1,1].set_xticklabels(user_terminals)
+ax[1,1].set_xticklabels(xlabels)
 ax[1,1].legend()
 ax[1,1].grid(True)
 
@@ -237,7 +261,7 @@ ax[2,0].set_xlabel('User Terminals Per gNB')
 ax[2,0].set_ylabel('Throughput (Mbps)')
 ax[2,0].set_title('Throughput (Mbps) vs User Terminals')
 ax[2,0].set_xticks(x)
-ax[2,0].set_xticklabels(user_terminals)
+ax[2,0].set_xticklabels(xlabels)
 ax[2,0].legend()
 ax[2,0].grid(True)
 
@@ -251,7 +275,7 @@ ax[2,1].set_xlabel('User Terminals Per gNB')
 ax[2,1].set_ylabel('Average Delay (ms)')
 ax[2,1].set_title('Average Delay (ms) vs User Terminals')
 ax[2,1].set_xticks(x)
-ax[2,1].set_xticklabels(user_terminals)
+ax[2,1].set_xticklabels(xlabels)
 ax[2,1].legend()
 ax[2,1].grid(True)
 
@@ -267,7 +291,7 @@ ax[3,0].set_xlabel('User Terminals Per gNB')
 ax[3,0].set_ylabel('Throughput (Mbps)')
 ax[3,0].set_title('Throughput (Mbps) vs User Terminals')
 ax[3,0].set_xticks(x)
-ax[3,0].set_xticklabels(user_terminals)
+ax[3,0].set_xticklabels(xlabels)
 ax[3,0].legend()
 ax[3,0].grid(True)
 
@@ -281,7 +305,7 @@ ax[3,1].set_xlabel('User Terminals Per gNB')
 ax[3,1].set_ylabel('Average Delay (ms)')
 ax[3,1].set_title('Average Delay (ms) vs User Terminals')
 ax[3,1].set_xticks(x)
-ax[3,1].set_xticklabels(user_terminals)
+ax[3,1].set_xticklabels(xlabels)
 ax[3,1].legend()
 ax[3,1].grid(True)
 

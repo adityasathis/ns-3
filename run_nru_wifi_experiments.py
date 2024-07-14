@@ -1,5 +1,6 @@
 # import subprocess
 # import itertools
+import math
 
 # numBs = [(6, 0), (3, 3)]
 # numUtsPerBs = [4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50]
@@ -162,7 +163,7 @@ trafficRatios = ["1:1:1:1", "2:1:1:1", "1:2:1:1", "1:1:2:1", "1:1:1:2"]
 numerology = [0, 1, 2]
 bandwidth = [20e6, 40e6, 80e6]
 enableCapcScheduler = [0, 1, 2]
-simTime = 5
+simTime = 100
 runs = 1
 
 def generate_commands():
@@ -194,7 +195,7 @@ def generate_commands():
     variation = "uts"
     ratio = "1:1:1:1"
     num = 2
-    bw = 40e6
+    bw = 80e6
     trafficModel = 0
     numBs = [(6,0)]
 
@@ -308,7 +309,7 @@ def generate_commands():
 
     return commands
 
-num_cores = os.cpu_count()
+num_cores = math.floor(os.cpu_count() / (0.5))
 max_workers = num_cores  # Set max_workers to the number of CPU cores
 
 commands = generate_commands()  # Assuming this function is defined as in previous examples
