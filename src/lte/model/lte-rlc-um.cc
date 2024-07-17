@@ -1195,6 +1195,34 @@ LteRlcUm::DoReportBufferStatus()
 
     if (!m_txBuffer.empty())
     {
+        // Discard the HOL packet if it exceeds the PDB
+        if (m_pdb && m_capc != 3) {
+            Time now = Simulator::Now();
+            uint32_t totalExpiredSize = 0;  // Variable to keep track of the total size of expired packets
+
+            std::cout << "Total Size: " << m_txBuffer.size() << std::endl;
+
+            for (auto it = m_txBuffer.begin(); it != m_txBuffer.end(); ) {
+                if ((now - it->m_waitingSince) > MilliSeconds(m_pdb)) {
+                    totalExpiredSize += it->m_pdu->GetSize();
+                    // std::cout << this << ", Removing PDU" << std::endl;
+                    // it = m_txBuffer.erase(it);  // Erase and move to the next element
+                } else {
+                    ++it;  // Move to the next element
+                }
+            }
+
+            // Reduce the total size of expired packets from m_txBufferSize
+            // m_txBufferSize -= totalExpiredSize;
+        }
+        // for (const auto& buffer : m_txBuffer) {
+        //     if (m_pdb) {
+        //         if (buffer.m_waitingSince > (Simulator::Now() - MilliSeconds(m_pdb))) {
+        //             m_txBuffer.erase(buffer);
+        //         }
+        //     }
+        // }
+
         holDelay = Simulator::Now() - m_txBuffer.front().m_waitingSince;
 
         queueSize =

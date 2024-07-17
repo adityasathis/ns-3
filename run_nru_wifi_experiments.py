@@ -157,12 +157,12 @@ def run_experiment(command, log_file):
     return log_file
 
 numBs = [(6, 0), (3, 3)]
-numUtsPerBs = [4, 8, 12]
+numUtsPerBs = [16]
 #numUtsPerBs = [16]
 trafficRatios = ["1:1:1:1", "2:1:1:1", "1:2:1:1", "1:1:2:1", "1:1:1:2"]
 numerology = [0, 1, 2]
 bandwidth = [20e6, 40e6, 80e6]
-enableCapcScheduler = [0, 1, 2]
+enableCapcScheduler = [0, 2]
 simTime = 100
 runs = 1
 
@@ -193,11 +193,12 @@ def generate_commands():
     # Experiment 1: Homogeneous NR-U
     # Variations (1.1): Changing UtsPerBs
     variation = "uts"
-    ratio = "1:1:1:1"
+    ratio = "13:1:1:1"
     num = 2
-    bw = 80e6
+    bw = 20e6
     trafficModel = 0
     numBs = [(6,0)]
+    enableOfdma = 0
 
     for run in range(runs):
         for numGnbs, numAps in numBs:
@@ -220,7 +221,7 @@ def generate_commands():
                         "./ns3", "run", 
                         f"nru-wifi-qos --numGnbs={numGnbs} --numAps={numAps} --numUtsPerBs={uts} "
                         f"--trafficRatio={ratio} --numerology={num} --bandwidth={bw} "
-                        f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run} --scheduler={scheduler} --lcScheduler={lcScheduler} --trafficModel={trafficModel}"
+                        f"--enableCapcScheduler={capc} --simTime={simTime} --runId={run} --scheduler={scheduler} --lcScheduler={lcScheduler} --trafficModel={trafficModel} --enableOfdma={enableOfdma}"
                     ]
                     
                     log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-scheduler{scheduler}-lcScheduler{lcScheduler}-trafficModel{trafficModel}-capc{capc}-simtime{simTime}-run{run}.log"
