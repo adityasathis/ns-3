@@ -157,14 +157,14 @@ def run_experiment(command, log_file):
     return log_file
 
 numBs = [(6, 0), (3, 3)]
-numUtsPerBs = [16]
+numUtsPerBs = [4, 8, 12]
 #numUtsPerBs = [16]
 trafficRatios = ["1:1:1:1", "2:1:1:1", "1:2:1:1", "1:1:2:1", "1:1:1:2"]
 numerology = [0, 1, 2]
 bandwidth = [20e6, 40e6, 80e6]
 enableCapcScheduler = [0, 2]
-simTime = 100
-runs = 1
+simTime = 5
+runs = 5
 
 def generate_commands():
     commands = []
@@ -193,12 +193,12 @@ def generate_commands():
     # Experiment 1: Homogeneous NR-U
     # Variations (1.1): Changing UtsPerBs
     variation = "uts"
-    ratio = "13:1:1:1"
+    ratio = "1:1:1:1"
     num = 2
-    bw = 20e6
+    bw = 80e6
     trafficModel = 0
     numBs = [(6,0)]
-    enableOfdma = 0
+    enableOfdma = 1
 
     for run in range(runs):
         for numGnbs, numAps in numBs:

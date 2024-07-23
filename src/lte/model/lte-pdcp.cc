@@ -218,7 +218,9 @@ LtePdcp::DoReceivePdu(Ptr<Packet> p)
     m_rxPdu(m_rnti, m_lcid, p->GetSize(), delay.GetNanoSeconds());
 
     LtePdcpHeader pdcpHeader;
-    p->RemoveHeader(pdcpHeader);
+    if (!p->RemoveHeader(pdcpHeader))
+        return;
+
     NS_LOG_LOGIC("PDCP header: " << pdcpHeader);
 
     m_rxSequenceNumber = pdcpHeader.GetSequenceNumber() + 1;

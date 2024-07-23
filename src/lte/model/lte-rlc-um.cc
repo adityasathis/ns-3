@@ -127,6 +127,7 @@ LteRlcUm::DoTransmitPdcpPdu(Ptr<Packet> p)
                 NS_LOG_DEBUG("m_packetDelayBudgetMs    = " << m_packetDelayBudgetMs);
                 NS_LOG_DEBUG("packet size     = " << p->GetSize());
                 m_txDropTrace(p);
+                return;
             }
         }
 
@@ -137,6 +138,7 @@ LteRlcUm::DoTransmitPdcpPdu(Ptr<Packet> p)
         NS_LOG_INFO("Adding RLC SDU to Tx Buffer after adding LteRlcSduStatusTag: FULL_SDU");
         m_txBuffer.emplace_back(p, Simulator::Now());
         m_txBufferSize += p->GetSize();
+        packetArrivals.emplace_back(p->GetSize(), Simulator::Now());
         NS_LOG_LOGIC("NumOfBuffers = " << m_txBuffer.size());
         NS_LOG_LOGIC("txBufferSize = " << m_txBufferSize);
     }
@@ -446,6 +448,8 @@ LteRlcUm::DoNotifyTxOpportunity(LteMacSapUser::TxOpportunityParameters txOpParam
     params.layer = txOpParams.layer;
     params.harqProcessId = txOpParams.harqId;
     params.componentCarrierId = txOpParams.componentCarrierId;
+
+    packetDepartures.emplace_back(params.pdu->GetSize(), Simulator::Now());
 
     NS_LOG_INFO("Forward RLC PDU to MAC Layer");
     m_macSapProvider->TransmitPdu(params);
@@ -1042,6 +1046,7 @@ LteRlcUm::ReassembleAndDeliver(Ptr<Packet> packet)
                  */
                 while (m_sdusBuffer.size() > 1)
                 {
+                    // std::cout << this << "Receiving PDCP PDU" << std::endl;
                     m_rlcSapUser->ReceivePdcpPdu(m_sdusBuffer.front());
                     m_sdusBuffer.pop_front();
                 }
@@ -1176,10 +1181,8 @@ LteRlcUm::ReassembleSnInterval(SequenceNumber10 lowSeqNumber, SequenceNumber10 h
         if (it != m_rxBuffer.end())
         {
             NS_LOG_LOGIC("SN = " << it->first);
-
             // Reassemble RLC SDUs and deliver the PDCP PDU to upper layer
             ReassembleAndDeliver(it->second);
-
             m_rxBuffer.erase(it);
         }
 
@@ -1200,28 +1203,20 @@ LteRlcUm::DoReportBufferStatus()
             Time now = Simulator::Now();
             uint32_t totalExpiredSize = 0;  // Variable to keep track of the total size of expired packets
 
-            std::cout << "Total Size: " << m_txBuffer.size() << std::endl;
-
             for (auto it = m_txBuffer.begin(); it != m_txBuffer.end(); ) {
                 if ((now - it->m_waitingSince) > MilliSeconds(m_pdb)) {
-                    totalExpiredSize += it->m_pdu->GetSize();
-                    // std::cout << this << ", Removing PDU" << std::endl;
-                    // it = m_txBuffer.erase(it);  // Erase and move to the next element
+                    std::cout << this << ", Removing PDU because waiting since " << (now - it->m_waitingSince).GetMilliSeconds() << std::endl;
+                    std::cout << this << ", removing " << it->m_pdu->GetSize() << " from " << m_txBufferSize << std::endl;
+                    m_txBufferSize -= it->m_pdu->GetSize();
+                    it = m_txBuffer.erase(it);  // Erase and move to the next element
                 } else {
                     ++it;  // Move to the next element
                 }
             }
 
             // Reduce the total size of expired packets from m_txBufferSize
-            // m_txBufferSize -= totalExpiredSize;
+            m_txBufferSize -= totalExpiredSize;
         }
-        // for (const auto& buffer : m_txBuffer) {
-        //     if (m_pdb) {
-        //         if (buffer.m_waitingSince > (Simulator::Now() - MilliSeconds(m_pdb))) {
-        //             m_txBuffer.erase(buffer);
-        //         }
-        //     }
-        // }
 
         holDelay = Simulator::Now() - m_txBuffer.front().m_waitingSince;
 
@@ -1241,9 +1236,7 @@ LteRlcUm::DoReportBufferStatus()
     r.statusPduSize = 0;
     r.capc = m_capc;
 
-    // std::cout << this << ": " << "Updating the buffer status report " << Simulator::Now() << std::endl;
-
-    NS_LOG_LOGIC("Send ReportBufferStatus = " << r.txQueueSize << ", " << r.txQueueHolDelay);
+    // std::cout << "Send ReportBufferStatus(" << +this->m_capc << ") = " << r.txQueueSize << ", " << r.txQueueHolDelay << std::endl;
     m_macSapProvider->ReportBufferStatus(r);
 }
 

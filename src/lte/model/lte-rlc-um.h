@@ -37,6 +37,8 @@ class LteRlcUm : public LteRlc
 {
   public:
     std::vector<std::pair<ns3::Time, ns3::Time>> holDelays;
+    std::vector<std::pair<uint64_t, ns3::Time>> packetDepartures;
+    std::vector<std::pair<uint64_t, ns3::Time>> packetArrivals;
     uint32_t m_maxTxBufferSize; ///< maximum transmit buffer status
     uint32_t m_txBufferSize;    ///< transmit buffer size
     double m_avgThroughput;   ///< average throughput achieved in the RLC
@@ -92,6 +94,8 @@ class LteRlcUm : public LteRlc
     };
 
     std::vector<TxPdu> m_txBuffer;              ///< Transmission buffer
+    /// Report buffer status
+    void DoReportBufferStatus();
   private:
     /// Expire reordering timer
     void ExpireReorderingTimer();
@@ -123,8 +127,6 @@ class LteRlcUm : public LteRlc
      */
     void ReassembleAndDeliver(Ptr<Packet> packet);
 
-    /// Report buffer status
-    void DoReportBufferStatus();
 
   private:
 

@@ -110,6 +110,13 @@ LtePdcpHeader::Deserialize(Buffer::Iterator start)
     uint8_t byte_2;
 
     byte_1 = i.ReadU8();
+
+    if (((byte_1 & 0x80) > 7) != DATA_PDU) {
+        std::cout << "Invalid data - skipping" << std::endl;
+        // NS_ASSERT(m_dcBit == DATA_PDU);
+        return 0;
+    }
+
     byte_2 = i.ReadU8();
     m_dcBit = (byte_1 & 0x80) > 7;
     // For now, we just support DATA PDUs
