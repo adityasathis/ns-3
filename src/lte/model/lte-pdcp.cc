@@ -215,11 +215,12 @@ LtePdcp::DoReceivePdu(Ptr<Packet> p)
     Time delay;
     p->FindFirstMatchingByteTag(pdcpTag);
     delay = Simulator::Now() - pdcpTag.GetSenderTimestamp();
-    m_rxPdu(m_rnti, m_lcid, p->GetSize(), delay.GetNanoSeconds());
 
     LtePdcpHeader pdcpHeader;
     if (!p->RemoveHeader(pdcpHeader))
         return;
+
+    m_rxPdu(m_rnti, m_lcid, p->GetSize(), delay.GetNanoSeconds());
 
     NS_LOG_LOGIC("PDCP header: " << pdcpHeader);
 

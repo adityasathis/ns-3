@@ -109,10 +109,9 @@ LteRlcUm::DoTransmitPdcpPdu(Ptr<Packet> p)
     {
         if (m_enablePdcpDiscarding)
         {
-            // discart the packet
+            // discard the packet
             uint32_t headOfLineDelayInMs = 0;
-            uint32_t discardTimerMs =
-                (m_discardTimerMs > 0) ? m_discardTimerMs : m_packetDelayBudgetMs;
+            uint32_t discardTimerMs = (m_discardTimerMs > 0) ? m_discardTimerMs : m_packetDelayBudgetMs;
 
             if (!m_txBuffer.empty())
             {
@@ -127,7 +126,7 @@ LteRlcUm::DoTransmitPdcpPdu(Ptr<Packet> p)
                 NS_LOG_DEBUG("m_packetDelayBudgetMs    = " << m_packetDelayBudgetMs);
                 NS_LOG_DEBUG("packet size     = " << p->GetSize());
                 m_txDropTrace(p);
-                return;
+                // return;
             }
         }
 
@@ -1199,24 +1198,24 @@ LteRlcUm::DoReportBufferStatus()
     if (!m_txBuffer.empty())
     {
         // Discard the HOL packet if it exceeds the PDB
-        if (m_pdb && m_capc != 3) {
-            Time now = Simulator::Now();
-            uint32_t totalExpiredSize = 0;  // Variable to keep track of the total size of expired packets
+        // if (m_pdb && m_capc != 3) {
+        //     Time now = Simulator::Now();
+        //     uint32_t totalExpiredSize = 0;  // Variable to keep track of the total size of expired packets
 
-            for (auto it = m_txBuffer.begin(); it != m_txBuffer.end(); ) {
-                if ((now - it->m_waitingSince) > MilliSeconds(m_pdb)) {
-                    std::cout << this << ", Removing PDU because waiting since " << (now - it->m_waitingSince).GetMilliSeconds() << std::endl;
-                    std::cout << this << ", removing " << it->m_pdu->GetSize() << " from " << m_txBufferSize << std::endl;
-                    m_txBufferSize -= it->m_pdu->GetSize();
-                    it = m_txBuffer.erase(it);  // Erase and move to the next element
-                } else {
-                    ++it;  // Move to the next element
-                }
-            }
+        //     for (auto it = m_txBuffer.begin(); it != m_txBuffer.end(); ) {
+        //         if ((now - it->m_waitingSince) > MilliSeconds(m_pdb)) {
+        //             std::cout << this << ", Removing PDU because waiting since " << (now - it->m_waitingSince).GetMilliSeconds() << std::endl;
+        //             std::cout << this << ", removing " << it->m_pdu->GetSize() << " from " << m_txBufferSize << std::endl;
+        //             m_txBufferSize -= it->m_pdu->GetSize();
+        //             it = m_txBuffer.erase(it);  // Erase and move to the next element
+        //         } else {
+        //             ++it;  // Move to the next element
+        //         }
+        //     }
 
-            // Reduce the total size of expired packets from m_txBufferSize
-            m_txBufferSize -= totalExpiredSize;
-        }
+        //     // Reduce the total size of expired packets from m_txBufferSize
+        //     m_txBufferSize -= totalExpiredSize;
+        // }
 
         holDelay = Simulator::Now() - m_txBuffer.front().m_waitingSince;
 
