@@ -1,5 +1,3 @@
-# import subprocess
-# import itertools
 import math
 import subprocess
 import itertools
@@ -20,12 +18,12 @@ numUtsPerBs = [4, 8, 12]
 trafficRatios = ["1:1:1:1", "2:1:1:1", "1:2:1:1", "1:1:2:1", "1:1:1:2"]
 numerology = [0, 1, 2]
 bandwidth = [20e6, 40e6, 80e6]
-enableCapcScheduler = [0, 2]
+enableCapcScheduler = [0, 1, 2]
 simTime = 10
 runs = 10
 
 def generate_commands():
-    commands = []
+    commands = {run: [] for run in range(runs)}
 
     # Experiment 1: Homogeneous NR-U
     # Variations (1.1): Changing UtsPerBs
@@ -62,23 +60,25 @@ def generate_commands():
                     ]
                     
                     log_file = f"nru-logs/change{variation}-gnb{numGnbs}-ap{numAps}-ut{uts}-ratio{ratio.replace(':', '')}-numerology{num}-bandwidth{int(bw/1e6)}-scheduler{scheduler}-lcScheduler{lcScheduler}-trafficModel{trafficModel}-capc{capc}-simtime{simTime}-run{run}.log"
-                    commands.append((command, log_file))
+                    commands[run].append((command, log_file))
     return commands
 
 num_cores = math.floor(os.cpu_count() / (0.5))
 max_workers = num_cores  # Set max_workers to the number of CPU cores
 
-commands = generate_commands()  # Assuming this function is defined as in previous examples
+commands_by_run = generate_commands()  # Group commands by run
 
-with ProcessPoolExecutor(max_workers=max_workers) as executor:
-    futures = [executor.submit(run_experiment, cmd, log) for cmd, log in commands]
-    num_commands = len(commands)
-    completed_count = 0
+for run in range(runs):
+    commands = commands_by_run[run]
+    with ProcessPoolExecutor(max_workers=max_workers) as executor:
+        futures = [executor.submit(run_experiment, cmd, log) for cmd, log in commands]
+        num_commands = len(commands)
+        completed_count = 0
                     
-    for future in as_completed(futures):
-        log_file = future.result()
-        completed_count += 1
-        print(f"Completed [{completed_count}/{num_commands}]: {log_file}")
+        for future in as_completed(futures):
+            log_file = future.result()
+            completed_count += 1
+            print(f"Completed [{completed_count}/{num_commands}] for run {run}: {log_file}")
 
 # Run commands in parallel
 #with ProcessPoolExecutor(max_workers=max_workers) as executor:
